@@ -7,7 +7,6 @@
  */
 
 // required headers
-header("Access-Control-Allow-Origin: http://localhost/rest-api-authentication-example/");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
@@ -18,38 +17,58 @@ error_reporting(E_ALL);
 ini_set("error_log", "php-error.log");
 
 
+require_once 'vendor/autoload.php';
+$config = require_once '../beru_config/config.php';
+
+use Avaks\Stocks;
+
 // get posted data
 $jsonBeruPost = file_get_contents("php://input");
+$beruAuth = $_GET["auth-token"];
 
-
-function getStock($beruSku)
+function getStock($idBeru)
 {
-    //query mongodb for avail
-    $avail = 0;
-    $updatedAt = '2019-09-09T13:01:18+03:00';
-
+    $stocks = new Stocks();
+    $stocks->getMPNFF($idBeru);
+    if ($stocks->found == false) return false;
     $items = array(array(
         'type' => 'FIT',
-        'count' => $avail,
-        'updatedAt' => $updatedAt
+        'count' => $stocks->available,
+        'updatedAt' => $stocks->updated
     ));
     return $items;
 }
 
+function validate($config, $beruAuth)
+{
+
+    //from post query
+    if ($config['auth-token'] == $beruAuth) {
+        return true;
+    } else {
+        error_log("$beruAuth error");
+        http_response_code(403);
+        die();
+    }
+}
+
+validate($config, $beruAuth);
 
 $jsonBeruPost = json_decode($jsonBeruPost, true);
-if (isset($jsonBeruPost['skus'])) {
+if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
     $skus = array();
 
     foreach ($jsonBeruPost['skus'] as $skuValue) {
         $items = getStock($skuValue);
-//        echo $items;
-        $skuItem = array(
-            'sku' => $skuValue,
-            'warehouseId' => 2,
-            'items' => $items
-        );
-        $skus[] = $skuItem;
+        if ($items!=false) {
+            $skuItem = array(
+                'sku' => $skuValue,
+                'warehouseId' => $jsonBeruPost['warehouseId'],
+                'items' => $items
+            );
+            $skus[] = $skuItem;
+        }
+
     }
     $skus = json_encode($skus);
 }
@@ -59,37 +78,14 @@ if (!empty($jsonBeruPost)) {
     http_response_code(200);
     echo $jsonOutput = '{"skus": ' . $skus . '}';
 
-    /*    echo '{
-              "{
-                "skus": [{
-                        "sku": "A200.190",
-                        "warehouseId": 2,
-                        "items": [{
-                            "type": "FIT",
-                            "count": 15,
-                            "updatedAt": "2019-09-09T13:01:18+03:00"
-                        }]
-                    },
-                    {
-                        "sku": "A287.14",
-                        "warehouseId": 2,
-                        "items": [{
-                            "type": "FIT",
-                            "count": 7,
-                            "updatedAt": "2019-09-09T12:44:08+03:00"
-                        }]
-                    }
-                ]
-            }';*/
-
+    error_log('Post-body  ' . json_encode($jsonBeruPost));
+    error_log('Headers ' . json_encode(apache_request_headers()));
 } else {
-
+    error_log('Post-body is empty ' . json_encode($jsonBeruPost));
     http_response_code(400);
-
+    die();
 }
 
-error_log('Post-body  ' . $jsonBeruPost);
-error_log('Headers ' . json_encode(apache_request_headers()));
 
 
 

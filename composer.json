@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Avaks\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "mongodb/mongodb": "^1.6"
+
+  }
+}
