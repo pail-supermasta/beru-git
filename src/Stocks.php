@@ -37,6 +37,25 @@ class Stocks
         }
 
     }
+
+    public function getMPNFFByBarcode($barcode)
+    {
+
+        $this->found = false;
+        $collection = (new MSSync())->MSSync;
+
+        $product = new Product();
+        $product->findByBarcode($barcode);
+        $filter = ['_product' => $product->id, '_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
+
+        $stockCursor = $collection->report_stock_all->findOne($filter);
+        if (isset($stockCursor->_product)) {
+            $this->found = true;
+            $this->available = $stockCursor->stock - $stockCursor->reserve;
+            $this->updated = $stockCursor->updated;
+        }
+
+    }
 }
 
 /*require_once '../vendor/autoload.php';

@@ -6,7 +6,8 @@
   },
   "require": {
     "php": "^7.0",
-    "mongodb/mongodb": "^1.6"
+    "mongodb/mongodb": "^1.6",
+    "phpoffice/phpspreadsheet": "^1.10"
 
   }
 }

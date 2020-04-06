@@ -81,6 +81,8 @@ if (!empty($jsonBeruPost)) {
     error_log('Post-body  ' . json_encode($jsonBeruPost));
     error_log('Headers ' . json_encode(apache_request_headers()));
 } else {
+//    http_response_code(200);
+
     error_log('Post-body is empty ' . json_encode($jsonBeruPost));
     http_response_code(400);
     die();

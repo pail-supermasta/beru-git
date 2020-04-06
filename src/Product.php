@@ -23,6 +23,15 @@ class Product
         $productCursor = $collection->product->findOne($filter);
         $this->id = $productCursor->_id ?? null;
     }
+
+    public function findByBarcode($barcode)
+    {
+        $collection = (new MSSync())->MSSync;
+        $filter = ['code' => $barcode];
+
+        $productCursor = $collection->product->findOne($filter);
+        $this->id = $productCursor->_id ?? null;
+    }
 }
 
 /*require_once '../vendor/autoload.php';
