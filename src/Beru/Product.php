@@ -6,9 +6,9 @@
  * Time: 12:16
  */
 
-namespace Avaks;
+namespace Avaks\Beru;
 
-use Avaks\MSSync;
+use Avaks\MS\MSSync;
 
 
 class Product
@@ -18,7 +18,7 @@ class Product
     public function findByID_BERU($idBeru)
     {
         $collection = (new MSSync())->MSSync;
-        $filter = ['attributes.value' => $idBeru];
+        $filter = ['_attributes.ID_BERU' => $idBeru];
 
         $productCursor = $collection->product->findOne($filter);
         $this->id = $productCursor->_id ?? null;
@@ -31,6 +31,14 @@ class Product
 
         $productCursor = $collection->product->findOne($filter);
         $this->id = $productCursor->_id ?? null;
+    }
+
+    public function findWithID_BERU()
+    {
+        $collection = (new MSSync())->MSSync;
+        $filter = ['attributes.id' => '032490b9-6d8f-11ea-0a80-027100264b27'];
+        $productCursor = $collection->product->find($filter)->toArray();
+        return $productCursor;
     }
 }
 

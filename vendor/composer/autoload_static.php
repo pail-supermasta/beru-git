@@ -85,6 +85,8 @@ class ComposerStaticInit53e73c4af565b380651bb74f73ead530
         ),
         'A' => 
         array (
+            'Avaks\\MS\\' => 9,
+            'Avaks\\Beru\\' => 11,
             'Avaks\\' => 6,
         ),
     );
@@ -109,6 +111,14 @@ class ComposerStaticInit53e73c4af565b380651bb74f73ead530
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+        ),
+        'Avaks\\MS\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/MS',
+        ),
+        'Avaks\\Beru\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Beru',
         ),
         'Avaks\\' => 
         array (

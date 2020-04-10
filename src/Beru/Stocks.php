@@ -7,10 +7,10 @@
  */
 
 
-namespace Avaks;
+namespace Avaks\Beru;
 
-use Avaks\MSSync;
-use Avaks\Product;
+use Avaks\MS\MSSync;
+use Avaks\Beru\Product;
 
 
 class Stocks
@@ -55,6 +55,23 @@ class Stocks
             $this->updated = $stockCursor->updated;
         }
 
+    }
+
+    public function getAll()
+    {
+        $collection = (new MSSync())->MSSync;
+        $filter = ['_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
+        $stockCursor = $collection->report_stock_all->find($filter);
+        $stockMS = array();
+        foreach ($stockCursor as $stock) {
+            $available = $stock['stock'] - $stock['reserve'];
+            if ($available <= 0) {
+                $available = 0;
+            }
+            $stockMS[$stock['_product']] = array('available' => $available, 'updated' => $stock['updated']);
+        }
+
+        return $stockMS;
     }
 }
 

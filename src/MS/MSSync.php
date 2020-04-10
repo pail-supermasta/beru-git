@@ -6,7 +6,7 @@
  * Time: 12:59
  */
 
-namespace Avaks;
+namespace Avaks\MS;
 
 
 use MongoDB\Client;

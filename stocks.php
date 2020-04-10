@@ -2,10 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: User
- * Date: 21.10.2019
- * Time: 17:04
+ * Date: 06.04.2020
+ * Time: 12:20
  */
 
+//timeout 5.5 секунд.
+
+$start = microtime(TRUE);
 // required headers
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
@@ -18,25 +21,22 @@ ini_set("error_log", "php-error.log");
 
 
 require_once 'vendor/autoload.php';
+require_once 'src/Telegram.php';
 $config = require_once '../beru_config/config.php';
 
-use Avaks\Stocks;
+use Avaks\MS\MSSync;
+use Avaks\Beru\Stocks;
+use Avaks\Beru\Product;
 
 // get posted data
 $jsonBeruPost = file_get_contents("php://input");
 $beruAuth = $_GET["auth-token"];
 
-function getStock($idBeru)
-{
-    $stocks = new Stocks();
-    $stocks->getMPNFF($idBeru);
-    if ($stocks->found == false) return false;
-    $items = array(array(
-        'type' => 'FIT',
-        'count' => $stocks->available,
-        'updatedAt' => $stocks->updated
-    ));
-    return $items;
+
+if (empty($jsonBeruPost)) {
+    error_log('Post-body is empty ' . $orderBeru);
+    http_response_code(400);
+    die();
 }
 
 function validate($config, $beruAuth)
@@ -54,47 +54,58 @@ function validate($config, $beruAuth)
 
 validate($config, $beruAuth);
 
+
+$collection = (new MSSync())->MSSync;
+
+//report_stock_all
+$stocks = new Stocks();
+$stockMS = $stocks->getAll();
+
+//product
+$product= new Product();
+$productCursor= $product->findWithID_BERU();
+
+
 $jsonBeruPost = json_decode($jsonBeruPost, true);
+
 if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
     $skus = array();
 
     foreach ($jsonBeruPost['skus'] as $skuValue) {
-        $items = getStock($skuValue);
-        if ($items!=false) {
-            $skuItem = array(
-                'sku' => $skuValue,
-                'warehouseId' => $jsonBeruPost['warehouseId'],
-                'items' => $items
-            );
-            $skus[] = $skuItem;
+
+        $skuFound=false;
+
+        foreach ($productCursor as $product) {
+            $product_id = null;
+
+            if ($product['_attributes']['ID_BERU'] == $skuValue) {
+                $product_id = $product['_id'];
+
+                $skuItem = array(
+                    'sku' => $skuValue,
+                    'warehouseId' => $jsonBeruPost['warehouseId'],
+                    'items' => array(array(
+                        'type' => 'FIT',
+                        'count' => $stockMS["$product_id"]['available'],
+                        'updatedAt' => $stockMS["$product_id"]['updated'],
+                    ))
+                );
+                $skus[] = $skuItem;
+                $skuFound = true;
+                break;
+            }
         }
+        if($skuFound == true) continue;
+
 
     }
     $skus = json_encode($skus);
-}
 
-if (!empty($jsonBeruPost)) {
 
     http_response_code(200);
     echo $jsonOutput = '{"skus": ' . $skus . '}';
 
-    error_log('Post-body  ' . json_encode($jsonBeruPost));
-    error_log('Headers ' . json_encode(apache_request_headers()));
-} else {
-//    http_response_code(200);
-
-    error_log('Post-body is empty ' . json_encode($jsonBeruPost));
-    http_response_code(400);
-    die();
 }
 
-
-
-
-
-
-
-
-
-
-
+$end = microtime(TRUE);
+telegram("POST /stocks took " . ($end - $start) . " seconds.", '-427337827');
