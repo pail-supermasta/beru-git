@@ -38,6 +38,22 @@ class OrderMS
         return isset((json_decode($res, true))['rows'][0]) ? (json_decode($res, true))['rows'][0] : $res;
     }
 
+    public function getAllBeru($states)
+    {
+        $collection = (new MSSync())->MSSync;
+        //Маркет
+        $filter = [
+            '_agent' => '782c484a-6749-11ea-0a80-03f900263ee6',
+            'deleted' => ['$exists' => false]
+        ];
+
+        if ($states != false) {
+            $filter['_state'] = $states;
+        }
+        $productCursor = $collection->customerorder->find($filter)->toArray();
+        return $productCursor;
+    }
+
     public function fillPosition($item)
     {
         //product
@@ -47,7 +63,7 @@ class OrderMS
 
         $position = array(
             "quantity" => $item['count'],
-            "price" => $item['price']*100,
+            "price" => $item['price'] * 100,
             "discount" => 0,
             "vat" => 0,
             "assortment" =>
@@ -176,5 +192,26 @@ class OrderMS
         $this->state = 'ecf45f89-f518-11e6-7a69-9711000ff0c4';
         $this->humanState = 'Оплачен';
         return $res;
+    }
+
+    public function setSticker()
+    {
+
+        //get file
+        $content = file_get_contents('files/labels/' . $this->name . '.pdf');
+        $content = base64_encode($content);
+
+        if ($content === FALSE) {
+            echo '// handle error here...';
+        } else {
+            $attribute['id'] = 'b8a8f6d6-5782-11e8-9ff4-34e800181bf6';
+            $attribute['file']['filename'] = "Ярлык $this->name.pdf";
+            $attribute['file']['content'] = $content;
+            $put_data['attributes'][] = $attribute;
+            $postdata = json_encode($put_data);
+            $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
+            //if no errors - remove file
+        }
+
     }
 }
