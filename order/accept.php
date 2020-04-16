@@ -108,7 +108,7 @@ $newOrderRes = CurlMoiSklad::curlMS('/entity/customerorder', $preparedOrder, 'po
 
 if (strpos($newOrderRes, 'обработка-ошибок') > 0 || $newOrderRes == '') {
     http_response_code(500);
-    error_log(json_encode($newOrderRes,JSON_UNESCAPED_UNICODE));
+    error_log(json_encode($newOrderRes, JSON_UNESCAPED_UNICODE));
     echo 'Ошибка создания заказа в Системе магазина.';
     telegram('ОШИБКА создания заказа ' . $orderBeru['id'], '-427337827');
     die();
@@ -125,4 +125,4 @@ if (strpos($newOrderRes, 'обработка-ошибок') > 0 || $newOrderRes 
 
 
 $end = microtime(TRUE);
-telegram("POST /order/accept took " . ($end - $start) . " seconds.", '-427337827');
+telegram("Заказ " . $orderBeru['id'] . " POST /order/accept took " . ($end - $start) . " seconds.", '-427337827');

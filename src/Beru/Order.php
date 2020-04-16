@@ -58,7 +58,25 @@ class Order
 
         $this->id = $orderBeru['id'];
         $this->shipments = $orderBeru['delivery']['shipments'][0];
-        $postdata = '{
+        $boxes = [];
+        if ($this->shipments['weight'] >= 15 && sizeof($this->shipments['items']) > 0) {
+            foreach ($this->shipments['items'] as $key => $item) {
+                $box = [
+                    "fulfilmentId" => $this->id . "-" . ($key + 1),
+                    "weight" => $this->shipments['weight'],
+                    "width" => $this->shipments['width'],
+                    "height" => $this->shipments['height'],
+                    "depth" => $this->shipments['depth'],
+                    "items" => array($item)
+                ];
+                $boxes[] = $box;
+            }
+
+            $boxes = json_encode($boxes);
+
+            $postdata = '{"boxes": ' . $boxes . '}';
+        } else {
+            $postdata = '{
                 "boxes": [{
                     "fulfilmentId": "' . $this->id . '-1",
                     "weight": ' . $this->shipments['weight'] . ',
@@ -68,6 +86,7 @@ class Order
                     "items": ' . json_encode($this->shipments['items']) . '
                 }]
             }';
+        }
 
 
         //https://api.partner.market.yandex.ru/v2/campaigns/21621240/orders/17150036/delivery/shipments/4177/boxes
@@ -91,14 +110,24 @@ class Order
         return $res;
     }
 
-    public function setMultipleOrdersStatus($orders)
+    public function setMultipleOrdersStatus($orders, $type = false)
     {
+
+        if ($type != false && $type == 'canceled') {
+            $status = "CANCELLED";
+            $substatus = "SHOP_FAILED";
+
+        } elseif ($type != false && $type == 'shipped') {
+            $status = "PROCESSING";
+            $substatus = "SHIPPED";
+
+        }
         $ordersItems = [];
         foreach ($orders as $order) {
             $orderItem = array(
                 "id" => $order,
-                "status" => "PROCESSING",
-                "substatus" => "SHIPPED"
+                "status" => $status,
+                "substatus" => $substatus
             );
             $ordersItems[] = $orderItem;
         }

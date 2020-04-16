@@ -63,8 +63,14 @@ class Stocks
         $filter = ['_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
         $stockCursor = $collection->report_stock_all->find($filter);
         $stockMS = array();
+        $available=0;
         foreach ($stockCursor as $stock) {
-            $available = $stock['stock'] - $stock['reserve'];
+            if (!isset($stock['reserve'])) {
+                $available = $stock['stock'];
+            } else {
+                $available = $stock['stock'] - $stock['reserve'];
+            }
+
             if ($available <= 0) {
                 $available = 0;
             }

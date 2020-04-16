@@ -34,5 +34,5 @@ foreach ($ordersBeruShipping as $orderBeruShipping) {
     }
 }
 
-$orders->setMultipleOrdersStatus($ordersShipped);
+$orders->setMultipleOrdersStatus($ordersShipped, 'shipped');
 

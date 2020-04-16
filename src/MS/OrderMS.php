@@ -175,7 +175,7 @@ class OrderMS
         return $res;
     }
 
-    public function setInWork()
+    public function setInWork($details)
     {
 
         $postdata = '{
@@ -185,7 +185,8 @@ class OrderMS
                     "type": "state",
                     "mediaType": "application/json"
                 }
-            }
+            },
+             "description": "' . $details . '"
         }';
         $res = '';
         $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
@@ -194,7 +195,7 @@ class OrderMS
         return $res;
     }
 
-    public function setSticker()
+    public function setToShip()
     {
 
         //get file
@@ -208,9 +209,26 @@ class OrderMS
             $attribute['file']['filename'] = "Ярлык $this->name.pdf";
             $attribute['file']['content'] = $content;
             $put_data['attributes'][] = $attribute;
+
+            $state['meta']['href'] = "https://online.moysklad.ru/api/remap/1.1/entity/customerorder/metadata/states/327c02b4-75c5-11e5-7a40-e89700139937";
+            $state['meta']['type'] = "state";
+            $state['meta']['mediaType'] = "application/json";
+            $put_data['state'] = $state;
+
+            $this->state = '327c02b4-75c5-11e5-7a40-e89700139937';
+            $this->humanState = 'ОТГРУЗИТЬ';
+
             $postdata = json_encode($put_data);
             $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
             //if no errors - remove file
+
+            if (strpos($res, 'обработка-ошибок') > 0 || $res == '') {
+                http_response_code(500);
+                error_log(json_encode($res, JSON_UNESCAPED_UNICODE));
+                echo 'Ошибка обновления статуса заказа в Системе магазина.';
+                telegram('ОШИБКА обновления статуса заказа ' . $this->name, '-427337827');
+                die();
+            }
         }
 
     }

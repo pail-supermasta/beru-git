@@ -1,2 +1,0 @@
-[14-Apr-2020 10:23:34 UTC] PHP Warning:  file_put_contents(../files/labels/17341733.pdf): failed to open stream: No such file or directory in C:\Users\User\Documents\beru.ltplk.ru\src\Beru\Order.php on line 28
-[14-Apr-2020 10:23:34 UTC] PHP Warning:  file_get_contents(../files/labels/17341733.pdf): failed to open stream: No such file or directory in C:\Users\User\Documents\beru.ltplk.ru\src\MS\OrderMS.php on line 201

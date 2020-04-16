@@ -21,8 +21,8 @@ $orders = new Order();
 $ordersBeruRes = json_decode($orders->getAll('?status=PROCESSING&substatus=STARTED'), true);
 
 $ordersMS = new OrderMS();
-//На выдаче
-$state = '8beb25ab-6088-11e7-7a6c-d2a9003b81a4';
+//В работе
+$state = 'ecf45f89-f518-11e6-7a69-9711000ff0c4';
 $ordersBeruReadyToShip = $ordersMS->getAllBeru($state);
 
 foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
@@ -37,7 +37,7 @@ foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
         $orders->getSticker();
         //if errors continue to next order
 
-        $ordersMS->setSticker();
+        $ordersMS->setToShip();
         //if errors continue to next order
 
         $orders->setStatus('PROCESSING', 'READY_TO_SHIP');

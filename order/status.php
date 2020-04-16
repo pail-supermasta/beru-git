@@ -103,7 +103,8 @@ $getOrderRes = $existingOrder->getByName();
 if (isset($getOrderRes['meta'])) {
     $existingOrder->id = $getOrderRes['id'];
     if ($orderBeru['status'] == 'PROCESSING' && $orderBeru['substatus'] == 'STARTED') {
-        $resSetInWork = $existingOrder->setInWork();
+        $details = "paymentType: " . $orderBeru['paymentType'] . " paymentMethod: " . $orderBeru['paymentMethod'];
+        $resSetInWork = $existingOrder->setInWork($details);
         if (strpos($resSetInWork, 'обработка-ошибок') > 0 || $resSetInWork == '') {
             http_response_code(500);
             error_log(json_encode($resSetInWork, JSON_UNESCAPED_UNICODE));
@@ -111,6 +112,10 @@ if (isset($getOrderRes['meta'])) {
             telegram('ОШИБКА обновления статуса заказа ' . $orderBeru['id'], '-427337827');
             die();
         }
+    } elseif ($orderBeru['status'] == 'UNPAID') {
+        http_response_code(200);
+        echo 'Заказ не оплачен.';
+        die();
     } elseif ($orderBeru['status'] == 'CANCELLED') {
         $resSetCanceled = $existingOrder->setCanceled();
         if (strpos($resSetCanceled, 'обработка-ошибок') > 0 || $resSetCanceled == '') {
@@ -133,5 +138,4 @@ if (isset($getOrderRes['meta'])) {
 }
 
 $end = microtime(TRUE);
-telegram("Заказ $existingOrder->name $existingOrder->humanState", '-427337827');
-telegram("POST /order/status took " . ($end - $start) . " seconds.", '-427337827');
+telegram("Заказ $existingOrder->name $existingOrder->humanState POST /order/status took " . ($end - $start) . " seconds.", '-427337827');
