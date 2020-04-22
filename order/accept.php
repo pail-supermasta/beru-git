@@ -80,7 +80,7 @@ if (isset($getOrderRes['meta'])) {
           }
         }';
     $end = microtime(TRUE);
-    telegram("POST /order/accept took " . ($end - $start) . " seconds. over.", '-427337827');
+    telegram("POST /order/accept took " . round(($end - $start), 2) . " seconds. over.", '-427337827');
     die();
 } elseif ($orderBeru['id'] == "" || $orderBeru['id'] == null) {
     http_response_code(400);
@@ -121,8 +121,13 @@ if (strpos($newOrderRes, 'обработка-ошибок') > 0 || $newOrderRes 
             "id": "' . $orderBeru['id'] . '"
           }
         }';
+
+    $newOrderRes= json_decode($newOrderRes, true);
+    $orderLinkMS = $newOrderRes['meta']['uuidHref'];
+
+    $orderId = $orderBeru['id'];
+    $end = microtime(TRUE);
+    telegram("Заказ [$orderId]($orderLinkMS) POST /order/accept took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
 }
 
 
-$end = microtime(TRUE);
-telegram("Заказ " . $orderBeru['id'] . " POST /order/accept took " . ($end - $start) . " seconds.", '-427337827');

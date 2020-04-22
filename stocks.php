@@ -62,8 +62,8 @@ $stocks = new Stocks();
 $stockMS = $stocks->getAll();
 
 //product
-$product= new Product();
-$productCursor= $product->findWithID_BERU();
+$product = new Product();
+$productCursor = $product->findWithID_BERU();
 
 
 $jsonBeruPost = json_decode($jsonBeruPost, true);
@@ -73,7 +73,7 @@ if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
 
     foreach ($jsonBeruPost['skus'] as $skuValue) {
 
-        $skuFound=false;
+        $skuFound = false;
 
         foreach ($productCursor as $product) {
             $product_id = null;
@@ -95,7 +95,7 @@ if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
                 break;
             }
         }
-        if($skuFound == true) continue;
+        if ($skuFound == true) continue;
 
 
     }
@@ -108,4 +108,4 @@ if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
 }
 
 $end = microtime(TRUE);
-telegram("POST /stocks took " . ($end - $start) . " seconds.", '-427337827');
+telegram("POST /stocks took " . round(($end - $start), 2) . " seconds.", '-427337827');

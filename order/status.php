@@ -131,11 +131,12 @@ if (isset($getOrderRes['meta'])) {
         die();
     }
 
+    $orderLinkMS = $getOrderRes['meta']['uuidHref'];
+    $end = microtime(TRUE);
+    telegram("Заказ [$existingOrder->name]($orderLinkMS) $existingOrder->humanState POST /order/status took " . round(($end - $start), 2) . " seconds.", '-427337827','Markdown');
+
 } else {
     http_response_code(400);
     echo 'Заказ не найден.';
     die();
 }
-
-$end = microtime(TRUE);
-telegram("Заказ $existingOrder->name $existingOrder->humanState POST /order/status took " . ($end - $start) . " seconds.", '-427337827');

@@ -59,14 +59,16 @@ class Order
         $this->id = $orderBeru['id'];
         $this->shipments = $orderBeru['delivery']['shipments'][0];
         $boxes = [];
-        if ($this->shipments['weight'] >= 15 && sizeof($this->shipments['items']) > 0) {
+        $itemsQty = sizeof($this->shipments['items']);
+
+        if ($this->shipments['weight'] >= 15 && $itemsQty > 0) {
             foreach ($this->shipments['items'] as $key => $item) {
                 $box = [
                     "fulfilmentId" => $this->id . "-" . ($key + 1),
-                    "weight" => $this->shipments['weight'],
-                    "width" => $this->shipments['width'],
-                    "height" => $this->shipments['height'],
-                    "depth" => $this->shipments['depth'],
+                    "weight" => (int)($this->shipments['weight'] / $itemsQty),
+                    "width" => (int)($this->shipments['width'] / $itemsQty),
+                    "height" => (int)($this->shipments['height'] / $itemsQty),
+                    "depth" => (int)($this->shipments['depth'] / $itemsQty),
                     "items" => array($item)
                 ];
                 $boxes[] = $box;

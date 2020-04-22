@@ -36,6 +36,6 @@ foreach ($ordersBeruCanceled as $orderBeruCanceled) {
 
 var_dump($ordersCanceled);
 if (sizeof($ordersCanceled) > 0) {
-    $orders->setMultipleOrdersStatus($ordersCanceled, 'canceled');
+    $orders->setMultipleOrdersStatus(['17820521'], 'canceled');
 }
 
