@@ -14,7 +14,7 @@ $config = require_once '../beru_config/config.php';
 
 use Avaks\Beru\Order;
 use Avaks\MS\OrderMS;
-
+use Avaks\Custom\Custom;
 
 
 $orders = new Order();
@@ -31,17 +31,35 @@ foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
 
         $ordersMS->name = $ordersBeruRes['orders'][$key]['id'];
         $ordersMS->id = $orderBeruReadyToShip['id'];
-        $setDeliveryRes = $orders->setDelivery($ordersBeruRes['orders'][$key]);
-        //if errors continue to next order
 
-        $orders->getSticker();
+        $res = $orders->setDelivery($ordersBeruRes['orders'][$key]);
         //if errors continue to next order
+        $message = 'ОШИБКА setDelivery заказа ' . $ordersBeruRes['orders'][$key];
+        $continue = Custom::sendErrorTelegramBeru($res, $message, 'setDelivery');
+        if ($continue) continue;
 
-        $ordersMS->setToShip();
+        $res = $orders->getSticker();
         //if errors continue to next order
+        $message = 'ОШИБКА getSticker заказа ' . $ordersBeruRes['orders'][$key];
+        $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
+        if ($continue) continue;
 
-        $orders->setStatus('PROCESSING', 'READY_TO_SHIP');
+
+        $res = $ordersMS->setToShip();
         //if errors continue to next order
+        $message = 'ОШИБКА setToShip заказа ' . $ordersBeruRes['orders'][$key];
+        $continue = Custom::sendErrorTelegram($res, $message, 'setToShip', false, true);
+        if ($continue) {
+            continue;
+        } else {
+            unlink('files/labels/' . $ordersBeruRes['orders'][$key] . '.pdf');
+        }
+
+        $res = $orders->setStatus('PROCESSING', 'READY_TO_SHIP');
+        //if errors continue to next order
+        $message = 'ОШИБКА setStatus READY_TO_SHIP заказа ' . $ordersBeruRes['orders'][$key];
+        $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
+        if ($continue) continue;
     }
 }
 

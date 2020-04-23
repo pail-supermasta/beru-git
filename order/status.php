@@ -65,6 +65,7 @@ require_once '../src/Telegram.php';
 $config = require_once '../../beru_config/config.php';
 
 use Avaks\MS\OrderMS;
+use Avaks\Custom\Custom;
 
 // get posted data
 $orderBeru = file_get_contents("php://input");
@@ -105,26 +106,18 @@ if (isset($getOrderRes['meta'])) {
     if ($orderBeru['status'] == 'PROCESSING' && $orderBeru['substatus'] == 'STARTED') {
         $details = "paymentType: " . $orderBeru['paymentType'] . " paymentMethod: " . $orderBeru['paymentMethod'];
         $resSetInWork = $existingOrder->setInWork($details);
-        if (strpos($resSetInWork, 'обработка-ошибок') > 0 || $resSetInWork == '') {
-            http_response_code(500);
-            error_log(json_encode($resSetInWork, JSON_UNESCAPED_UNICODE));
-            echo 'Ошибка обновления статуса заказа в Системе магазина.';
-            telegram('ОШИБКА обновления статуса заказа ' . $orderBeru['id'], '-427337827');
-            die();
-        }
+
+        $message = 'ОШИБКА обновления статуса STARTED заказа ' . $orderBeru['id'];
+        Custom::sendErrorTelegram($resSetInWork, $message, 'status', true);
     } elseif ($orderBeru['status'] == 'UNPAID') {
         http_response_code(200);
         echo 'Заказ не оплачен.';
         die();
     } elseif ($orderBeru['status'] == 'CANCELLED') {
         $resSetCanceled = $existingOrder->setCanceled();
-        if (strpos($resSetCanceled, 'обработка-ошибок') > 0 || $resSetCanceled == '') {
-            http_response_code(500);
-            error_log(json_encode($resSetCanceled, JSON_UNESCAPED_UNICODE));
-            echo 'Ошибка обновления статуса заказа в Системе магазина.';
-            telegram('ОШИБКА обновления статуса заказа ' . $orderBeru['id'], '-427337827');
-            die();
-        }
+
+        $message = 'ОШИБКА обновления статуса CANCELLED заказа ' . $orderBeru['id'];
+        Custom::sendErrorTelegram($resSetCanceled, $message, 'status', true);
     } else {
         http_response_code(400);
         echo 'Статус не распознан.';
@@ -133,7 +126,7 @@ if (isset($getOrderRes['meta'])) {
 
     $orderLinkMS = $getOrderRes['meta']['uuidHref'];
     $end = microtime(TRUE);
-    telegram("Заказ [$existingOrder->name]($orderLinkMS) $existingOrder->humanState POST /order/status took " . round(($end - $start), 2) . " seconds.", '-427337827','Markdown');
+    telegram("Заказ [$existingOrder->name]($orderLinkMS) $existingOrder->humanState POST /order/status took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
 
 } else {
     http_response_code(400);

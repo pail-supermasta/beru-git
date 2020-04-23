@@ -35,6 +35,7 @@ $config = require_once '../../beru_config/config.php';
 
 use Avaks\MS\OrderMS;
 use Avaks\MS\CurlMoiSklad;
+use Avaks\Custom\Custom;
 
 // get posted data
 $orderBeru = file_get_contents("php://input");
@@ -106,15 +107,12 @@ $orderDetails['positions'] = json_encode($positions);
 $preparedOrder = $newOrder->prepareOrder($orderDetails);
 $newOrderRes = CurlMoiSklad::curlMS('/entity/customerorder', $preparedOrder, 'post');
 
-if (strpos($newOrderRes, 'обработка-ошибок') > 0 || $newOrderRes == '') {
-    http_response_code(500);
-    error_log(json_encode($newOrderRes, JSON_UNESCAPED_UNICODE));
-    echo 'Ошибка создания заказа в Системе магазина.';
-    telegram('ОШИБКА создания заказа ' . $orderBeru['id'], '-427337827');
-    die();
-} else {
-    http_response_code(200);
-    echo $jsonOutput = '{
+$message = 'ОШИБКА создания заказа ' . $orderBeru['id'];
+Custom::sendErrorTelegram($newOrderRes, $message, 'accept', true);
+
+
+http_response_code(200);
+echo $jsonOutput = '{
           "order":
           {
             "accepted": true,
@@ -122,12 +120,11 @@ if (strpos($newOrderRes, 'обработка-ошибок') > 0 || $newOrderRes 
           }
         }';
 
-    $newOrderRes= json_decode($newOrderRes, true);
-    $orderLinkMS = $newOrderRes['meta']['uuidHref'];
+$newOrderRes = json_decode($newOrderRes, true);
+$orderLinkMS = $newOrderRes['meta']['uuidHref'];
 
-    $orderId = $orderBeru['id'];
-    $end = microtime(TRUE);
-    telegram("Заказ [$orderId]($orderLinkMS) POST /order/accept took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
-}
+$orderId = $orderBeru['id'];
+$end = microtime(TRUE);
+telegram("Заказ [$orderId]($orderLinkMS) POST /order/accept took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
 
 

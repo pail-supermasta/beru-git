@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Avaks\" />
       <sourceFolder url="file://$MODULE_DIR$/src/Beru" isTestSource="false" packagePrefix="Avaks\Beru\" />
       <sourceFolder url="file://$MODULE_DIR$/src/MS" isTestSource="false" packagePrefix="Avaks\MS\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Custom" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/markbaker/complex" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/markbaker/matrix" />

@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17b6bc09-bcc8-41c1-a3b9-3da7d2808b1c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Custom/Custom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/beru.ltplk.ru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beru.ltplk.ru.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/canceled-bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/canceled-bot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery-shipments-boxes-bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/delivery-shipments-boxes-bot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/21616127-catalog-25-03-2020_с рекомдациями.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17451585.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17452270.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17456572.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17458133.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17466990.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17468687.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17469800.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17470157.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17644821.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17708882.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/labels/17819948.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/order/accept.php" beforeDir="false" afterPath="$PROJECT_DIR$/order/accept.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/status.php" beforeDir="false" afterPath="$PROJECT_DIR$/order/status.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/php-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shipped-bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/shipped-bot.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Beru/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Beru/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MS/MSSync.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MS/MSSync.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MS/OrderMS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MS/OrderMS.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,87 +40,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrderMS.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MS/OrderMS.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="45" />
-              <folding>
-                <element signature="e#256#426#0#PHP" />
-                <element signature="e#432#565#0#PHP" />
-                <element signature="e#571#806#0#PHP" />
-                <element signature="e#1263#2038#0#PHP" />
-                <element signature="e#1430#2005#0#PHP" />
-                <element signature="e#1621#1954#1#PHP" />
-                <element signature="e#1682#1935#1#PHP" />
-                <element signature="e#2044#5094#0#PHP" />
-                <element signature="e#5100#5727#0#PHP" />
-                <element signature="e#5733#6415#0#PHP" />
-                <element signature="e#6421#7948#0#PHP" />
-                <element signature="e#6606#7941#0#PHP" />
-                <element signature="e#6686#7941#0#PHP" />
-                <element signature="e#7558#7931#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canceled-bot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canceled-bot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Beru/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="delivery-shipments-boxes-bot.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delivery-shipments-boxes-bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state relative-caret-position="238">
+              <caret line="44" selection-start-line="44" selection-end-line="45" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
+                <element signature="e#241#262#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Beru/Product.php">
+      <file leaf-file-name="canceled-bot.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/canceled-bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="41" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="207">
+              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding>
+                <element signature="e#241#262#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stocks.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Beru/Stocks.php">
+      <file leaf-file-name="shipped-bot.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shipped-bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="204">
+              <caret line="38" column="87" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
+              <folding>
+                <element signature="e#241#262#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stocks.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stocks.php">
+      <file leaf-file-name="OrderMS.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MS/OrderMS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="63">
+              <caret line="198" column="20" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
+              <folding>
+                <element signature="e#109#132#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setSticker</find>
-      <find>setSti</find>
       <find>17450548</find>
       <find>17451585</find>
       <find>ecf45f89-f518-11e6-7a69-9711000ff0c4</find>
@@ -141,6 +121,8 @@
       <find>'_store' =&gt;</find>
       <find>$in</find>
       <find>deleted</find>
+      <find>http_response_code(500)</find>
+      <find>sendErrorTelegram</find>
     </findStrings>
     <replaceStrings>
       <replace>$jsonBeruPost</replace>
@@ -172,21 +154,24 @@
         <option value="$PROJECT_DIR$/src/Stocks.php" />
         <option value="$PROJECT_DIR$/src/CurlMS.php" />
         <option value="$PROJECT_DIR$/src/OrderMS.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/MS/MSSync.php" />
         <option value="$PROJECT_DIR$/src/MS/CurlMS.php" />
         <option value="$PROJECT_DIR$/src/Beru/Product.php" />
         <option value="$PROJECT_DIR$/src/Beru/Curl.php" />
         <option value="$PROJECT_DIR$/order/delivery-shipments-boxes.php" />
         <option value="$PROJECT_DIR$/src/Beru/Stocks.php" />
-        <option value="$PROJECT_DIR$/src/MS/OrderMS.php" />
-        <option value="$PROJECT_DIR$/shipped-bot.php" />
-        <option value="$PROJECT_DIR$/delivery-shipments-boxes-bot.php" />
         <option value="$PROJECT_DIR$/stocks.php" />
+        <option value="$PROJECT_DIR$/cart.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/order/status.php" />
         <option value="$PROJECT_DIR$/order/accept.php" />
-        <option value="$PROJECT_DIR$/cart.php" />
+        <option value="$PROJECT_DIR$/src/MS/OrderMS.php" />
+        <option value="$PROJECT_DIR$/php-error.log" />
+        <option value="$PROJECT_DIR$/test-unlink.php" />
+        <option value="$PROJECT_DIR$/delivery-shipments-boxes-bot.php" />
         <option value="$PROJECT_DIR$/src/Beru/Order.php" />
+        <option value="$PROJECT_DIR$/src/Custom/Custom.php" />
+        <option value="$PROJECT_DIR$/shipped-bot.php" />
         <option value="$PROJECT_DIR$/canceled-bot.php" />
       </list>
     </option>
@@ -211,8 +196,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="192" />
+    <option name="x" value="126" />
+    <option name="y" value="222" />
     <option name="width" value="1401" />
     <option name="height" value="733" />
   </component>
@@ -232,6 +217,11 @@
             <path>
               <item name="beru.ltplk.ru" type="b2602c69:ProjectViewProjectNode" />
               <item name="beru.ltplk.ru" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beru.ltplk.ru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beru.ltplk.ru" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,7 +233,7 @@
               <item name="beru.ltplk.ru" type="b2602c69:ProjectViewProjectNode" />
               <item name="beru.ltplk.ru" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Beru" type="462c0819:PsiDirectoryNode" />
+              <item name="Custom" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="beru.ltplk.ru" type="b2602c69:ProjectViewProjectNode" />
@@ -266,15 +256,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\beru.ltplk.ru\src" />
+      <recent name="C:\Users\User\Documents\beru.ltplk.ru" />
+      <recent name="C:\Users\User\Documents\beru.ltplk.ru\src\Beru" />
+      <recent name="C:\Users\User\Documents\beru.ltplk.ru\src\MS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\beru.ltplk.ru" />
       <recent name="C:\Users\User\Documents\beru.ltplk.ru\order" />
       <recent name="C:\Users\User\Documents\beru.ltplk.ru\src\Beru" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\beru.ltplk.ru" />
-      <recent name="C:\Users\User\Documents\beru.ltplk.ru\src\Beru" />
-      <recent name="C:\Users\User\Documents\beru.ltplk.ru\src\MS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,26 +280,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.canceled-bot.php">
-    <configuration name="Stocks.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/Beru/Stocks.php" />
+  <component name="RunManager" selected="PHP Script.test-unlink.php">
     <configuration name="canceled-bot.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/canceled-bot.php" />
     <configuration name="delivery-shipments-boxes-bot.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/delivery-shipments-boxes-bot.php" />
     <configuration name="shipped-bot.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/shipped-bot.php" />
     <configuration name="status.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/order/status.php" />
+    <configuration name="test-unlink.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test-unlink.php" />
     <list>
       <item itemvalue="PHP Script.status.php" />
-      <item itemvalue="PHP Script.Stocks.php" />
       <item itemvalue="PHP Script.delivery-shipments-boxes-bot.php" />
       <item itemvalue="PHP Script.shipped-bot.php" />
       <item itemvalue="PHP Script.canceled-bot.php" />
+      <item itemvalue="PHP Script.test-unlink.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.canceled-bot.php" />
+        <item itemvalue="PHP Script.test-unlink.php" />
         <item itemvalue="PHP Script.delivery-shipments-boxes-bot.php" />
+        <item itemvalue="PHP Script.canceled-bot.php" />
         <item itemvalue="PHP Script.shipped-bot.php" />
         <item itemvalue="PHP Script.status.php" />
-        <item itemvalue="PHP Script.Stocks.php" />
       </list>
     </recent_temporary>
   </component>
@@ -353,28 +344,32 @@
       <workItem from="1587454657191" duration="2506000" />
       <workItem from="1587467644953" duration="17000" />
       <workItem from="1587472351167" duration="1345000" />
+      <workItem from="1587539094411" duration="306000" />
+      <workItem from="1587540815179" duration="3985000" />
+      <workItem from="1587561106905" duration="949000" />
+      <workItem from="1587565893218" duration="2919000" />
+      <workItem from="1587630201834" duration="6758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183180000" />
+    <option name="totallyTimeSpent" value="198097000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="192" width="1401" height="733" extended-state="0" />
-    <editor active="true" />
+    <frame x="126" y="222" width="1401" height="733" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26845637" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34453782" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34453782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32754344" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970502" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970502" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -396,27 +391,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/order/accept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stocks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MS/OrderMS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="139" column="27" selection-start-line="139" selection-start-column="27" selection-end-line="139" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order/accept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
@@ -609,25 +583,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newstocks.php" />
     <entry file="file://$PROJECT_DIR$/src/Order.php" />
-    <entry file="file://$PROJECT_DIR$/src/Beru/Curl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stockXLSParse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php-error.log" />
-    <entry file="file://$PROJECT_DIR$/shipped-bot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -645,109 +604,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/status.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="135" column="133" selection-start-line="135" selection-start-column="119" selection-end-line="135" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/accept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../beru_config/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beru/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="513">
           <caret line="41" column="5" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stocks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MS/OrderMS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="45" />
-          <folding>
-            <element signature="e#256#426#0#PHP" />
-            <element signature="e#432#565#0#PHP" />
-            <element signature="e#571#806#0#PHP" />
-            <element signature="e#1263#2038#0#PHP" />
-            <element signature="e#1430#2005#0#PHP" />
-            <element signature="e#1621#1954#1#PHP" />
-            <element signature="e#1682#1935#1#PHP" />
-            <element signature="e#2044#5094#0#PHP" />
-            <element signature="e#5100#5727#0#PHP" />
-            <element signature="e#5733#6415#0#PHP" />
-            <element signature="e#6421#7948#0#PHP" />
-            <element signature="e#6606#7941#0#PHP" />
-            <element signature="e#6686#7941#0#PHP" />
-            <element signature="e#7558#7931#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delivery-shipments-boxes-bot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canceled-bot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MS/MSSync.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Beru/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Beru/Stocks.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MS/MSSync.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stocks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="92" column="35" lean-forward="true" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/accept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="109" selection-start-line="109" selection-end-line="110" selection-end-column="66" />
+          <folding>
+            <element signature="e#1039#1060#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="119" column="77" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="119" selection-end-column="77" />
+          <folding>
+            <element signature="e#1886#1907#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MS/OrderMS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="198" column="20" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
+          <folding>
+            <element signature="e#109#132#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-unlink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-error.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beru/Curl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery-shipments-boxes-bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" selection-start-line="44" selection-end-line="45" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#241#262#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Beru/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding>
+            <element signature="e#111#131#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/Custom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipped-bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="87" selection-start-line="38" selection-start-column="87" selection-end-line="38" selection-end-column="87" />
+          <folding>
+            <element signature="e#241#262#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canceled-bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#241#262#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

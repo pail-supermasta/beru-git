@@ -9,6 +9,7 @@
 namespace Avaks\MS;
 
 use Avaks\Beru\Product;
+use Avaks\Custom\Custom;
 
 class OrderMS
 {
@@ -204,6 +205,8 @@ class OrderMS
 
         if ($content === FALSE) {
             echo '// handle error here...';
+            return false;
+
         } else {
             $attribute['id'] = 'b8a8f6d6-5782-11e8-9ff4-34e800181bf6';
             $attribute['file']['filename'] = "Ярлык $this->name.pdf";
@@ -221,14 +224,7 @@ class OrderMS
             $postdata = json_encode($put_data);
             $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
             //if no errors - remove file
-
-            if (strpos($res, 'обработка-ошибок') > 0 || $res == '') {
-                http_response_code(500);
-                error_log(json_encode($res, JSON_UNESCAPED_UNICODE));
-                echo 'Ошибка обновления статуса заказа в Системе магазина.';
-                telegram('ОШИБКА обновления статуса заказа ' . $this->name, '-427337827');
-                die();
-            }
+            return $res;
         }
 
     }

@@ -9,6 +9,7 @@
 namespace Avaks\Beru;
 
 use Avaks\Beru\Curl;
+use Avaks\Custom\Custom;
 
 class Order
 {
@@ -46,11 +47,14 @@ class Order
 
     public function getSticker()
     {
-        //https://api.partner.market.yandex.ru/v2/campaigns/21621240/orders/17341733/delivery/labels.json
         $query = 'orders/' . $this->id . '/delivery/labels.json';
         $res = Curl::execute($query);
+
         // download
         $this->Download($res);
+        return $res;
+
+
     }
 
     public function setDelivery($orderBeru)
@@ -137,7 +141,6 @@ class Order
         $postdata = '{"orders":' . $ordersItems . '}';
         $query = 'orders/' . $this->id . '/status-update.json';
         $res = Curl::execute($query, $postdata, 'post', true);
-        var_dump($res);
         return $res;
     }
 }

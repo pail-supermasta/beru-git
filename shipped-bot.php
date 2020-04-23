@@ -14,6 +14,7 @@ $config = require_once '../beru_config/config.php';
 
 use Avaks\Beru\Order;
 use Avaks\MS\OrderMS;
+use Avaks\Custom\Custom;
 
 
 $orders = new Order();
@@ -28,11 +29,14 @@ $ordersShipped = array();
 foreach ($ordersBeruShipping as $orderBeruShipping) {
     $key = array_search($orderBeruShipping['name'], array_column($ordersBeruRes['orders'], 'id'));
     if (!is_bool($key) && !isset($ordersBeruRes['orders'][$key]['cancelRequested'])) {
-
         $ordersShipped[]  = $ordersBeruRes['orders'][$key]['id'];
-
     }
 }
 
-$orders->setMultipleOrdersStatus($ordersShipped, 'shipped');
+if (sizeof($ordersShipped) > 0) {
+    $res = $orders->setMultipleOrdersStatus($ordersShipped, 'shipped');
+    $message = 'ОШИБКА setMultipleOrdersStatus shipped';
+    $continue = Custom::sendErrorTelegramBeru($res, $message, 'setMultipleOrdersStatusShipped');
+}
+
 

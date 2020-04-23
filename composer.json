@@ -4,6 +4,7 @@
       "Avaks\\": "src/",
       "Avaks\\MS\\": "src/MS/",
       "Avaks\\Beru\\": "src/Beru/"
+      "Avaks\\Custom\\": "src/Custom/"
 
     }
   },
