@@ -52,7 +52,7 @@ foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
         if ($continue) {
             continue;
         } else {
-            unlink('files/labels/' . $ordersBeruRes['orders'][$key] . '.pdf');
+//            unlink('files/labels/' . $ordersBeruRes['orders'][$key] . '.pdf');
         }
 
         $res = $orders->setStatus('PROCESSING', 'READY_TO_SHIP');

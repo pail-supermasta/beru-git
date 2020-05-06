@@ -86,7 +86,8 @@ class OrderMS
 
         /*ждем оплаты*/
         $state = '327c0111-75c5-11e5-7a40-e89700139936';
-        $logisticsProvider = '1 Не нужна доставка';
+        $logisticsProvider = '0 Нужна доставка';
+        $addressComment = 'тел Диспетчер +7(495)739-21-15';
 
         $postdata = '{
             "name": "' . $orderDetails['order'] . '",
@@ -138,7 +139,13 @@ class OrderMS
                 },
                 {
                     "id": "547ff930-ef8e-11e6-7a31-d0fd0021d13e",
-                    "value": "Адрес"
+                    "value": "Московская область, г. Подольск, мкр. Климовск, ул. Коммунальная, д. 17, с 11:00-20:00"
+                },
+                {
+                    "id": "547ffa0e-ef8e-11e6-7a31-d0fd0021d13f",
+                    "value": {
+                        "value": "' . $addressComment . '"
+                    }
                 },
                 {
                     "id": "4552a58b-46a8-11e7-7a34-5acf002eb7ad",
