@@ -12,6 +12,7 @@ return array(
     'Matrix\\' => array($vendorDir . '/markbaker/matrix/classes/src'),
     'Complex\\' => array($vendorDir . '/markbaker/complex/classes/src'),
     'Avaks\\MS\\' => array($baseDir . '/src/MS'),
+    'Avaks\\Custom\\' => array($baseDir . '/src/Custom'),
     'Avaks\\Beru\\' => array($baseDir . '/src/Beru'),
     'Avaks\\' => array($baseDir . '/src'),
 );

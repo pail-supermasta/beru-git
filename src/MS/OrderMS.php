@@ -165,7 +165,7 @@ class OrderMS
         return $postdata;
     }
 
-    public function setCanceled()
+    public function setCanceled($details = false)
     {
         $postdata = '{
             "state": {
@@ -174,7 +174,8 @@ class OrderMS
                     "type": "state",
                     "mediaType": "application/json"
                 }
-            }
+            },
+             "description": "' . $details . '"
         }';
         $res = '';
         $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');

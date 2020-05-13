@@ -102,16 +102,30 @@ $getOrderRes = $existingOrder->getByName();
 
 
 if (isset($getOrderRes['meta'])) {
-    $existingOrder->id = $getOrderRes['id'];
     if ($orderBeru['status'] == 'PROCESSING' && $orderBeru['substatus'] == 'STARTED') {
         $details = "paymentType: " . $orderBeru['paymentType'] . " paymentMethod: " . $orderBeru['paymentMethod'];
         $resSetInWork = $existingOrder->setInWork($details);
 
         $message = 'ОШИБКА обновления статуса STARTED заказа ' . $orderBeru['id'];
         Custom::sendErrorTelegram($resSetInWork, $message, 'status', true);
-    } elseif ($orderBeru['status'] == 'UNPAID') {
+    }  elseif ($orderBeru['status'] == 'UNPAID') {
         http_response_code(200);
         echo 'Заказ не оплачен.';
+        die();
+    } elseif ($orderBeru['status'] == 'DELIVERY') {
+        http_response_code(200);
+        // доставляется
+        echo 'Заказ доставляется.';
+        die();
+
+    } elseif ($orderBeru['status'] == 'DELIVERED') {
+        http_response_code(200);
+        echo 'Заказ доставлен.';
+        die();
+
+    } elseif ($orderBeru['status'] == 'PICKUP') {
+        http_response_code(200);
+        echo 'Заказ доставлен в пункт самовывоза.';
         die();
     } elseif ($orderBeru['status'] == 'CANCELLED') {
         $resSetCanceled = $existingOrder->setCanceled();
@@ -123,6 +137,7 @@ if (isset($getOrderRes['meta'])) {
         echo 'Статус не распознан.';
         die();
     }
+    $existingOrder->id = $getOrderRes['id'];
 
     $orderLinkMS = $getOrderRes['meta']['uuidHref'];
     $end = microtime(TRUE);

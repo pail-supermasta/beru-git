@@ -113,5 +113,5 @@ http_response_code(200);
 echo json_encode($response);
 
 $end = microtime(TRUE);
-telegram("POST /cart took " .  round(($end - $start), 2) . " seconds.", '-427337827');
+//telegram("POST /cart took " .  round(($end - $start), 2) . " seconds.", '-427337827');
 

@@ -10,6 +10,8 @@ error_reporting(E_ALL);
 ini_set("error_log", "php-error.log");
 
 require_once 'vendor/autoload.php';
+require_once 'src/Telegram.php';
+
 $config = require_once '../beru_config/config.php';
 
 use Avaks\Beru\Order;
@@ -34,20 +36,20 @@ foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
 
         $res = $orders->setDelivery($ordersBeruRes['orders'][$key]);
         //if errors continue to next order
-        $message = 'ОШИБКА setDelivery заказа ' . $ordersBeruRes['orders'][$key];
+        $message = 'ОШИБКА setDelivery заказа ' . $ordersMS->name;
         $continue = Custom::sendErrorTelegramBeru($res, $message, 'setDelivery');
         if ($continue) continue;
 
         $res = $orders->getSticker();
         //if errors continue to next order
-        $message = 'ОШИБКА getSticker заказа ' . $ordersBeruRes['orders'][$key];
+        $message = 'ОШИБКА getSticker заказа ' . $ordersMS->name;
         $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
         if ($continue) continue;
 
 
         $res = $ordersMS->setToShip();
         //if errors continue to next order
-        $message = 'ОШИБКА setToShip заказа ' . $ordersBeruRes['orders'][$key];
+        $message = 'ОШИБКА setToShip заказа ' . $ordersMS->name;
         $continue = Custom::sendErrorTelegram($res, $message, 'setToShip', false, true);
         if ($continue) {
             continue;
@@ -57,7 +59,7 @@ foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
 
         $res = $orders->setStatus('PROCESSING', 'READY_TO_SHIP');
         //if errors continue to next order
-        $message = 'ОШИБКА setStatus READY_TO_SHIP заказа ' . $ordersBeruRes['orders'][$key];
+        $message = 'ОШИБКА setStatus READY_TO_SHIP заказа ' . $ordersMS->name;
         $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
         if ($continue) continue;
     }

@@ -86,6 +86,7 @@ class ComposerStaticInit53e73c4af565b380651bb74f73ead530
         'A' => 
         array (
             'Avaks\\MS\\' => 9,
+            'Avaks\\Custom\\' => 13,
             'Avaks\\Beru\\' => 11,
             'Avaks\\' => 6,
         ),
@@ -115,6 +116,10 @@ class ComposerStaticInit53e73c4af565b380651bb74f73ead530
         'Avaks\\MS\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/MS',
+        ),
+        'Avaks\\Custom\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Custom',
         ),
         'Avaks\\Beru\\' => 
         array (

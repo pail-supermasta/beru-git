@@ -3,7 +3,7 @@
     "psr-4": {
       "Avaks\\": "src/",
       "Avaks\\MS\\": "src/MS/",
-      "Avaks\\Beru\\": "src/Beru/"
+      "Avaks\\Beru\\": "src/Beru/",
       "Avaks\\Custom\\": "src/Custom/"
 
     }
