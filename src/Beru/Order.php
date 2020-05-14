@@ -139,7 +139,7 @@ class Order
         }
         $ordersItems = json_encode($ordersItems);
         $postdata = '{"orders":' . $ordersItems . '}';
-        $query = 'orders/' . $this->id . '/status-update.json';
+        $query = 'orders/status-update.json';
         $res = Curl::execute($query, $postdata, 'post', true);
         return $res;
     }

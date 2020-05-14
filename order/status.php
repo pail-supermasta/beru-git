@@ -99,9 +99,9 @@ $existingOrder = new OrderMS();
 $orderBeru = json_decode($orderBeru, true)['order'];
 $existingOrder->name = $orderBeru['id'];
 $getOrderRes = $existingOrder->getByName();
+if (isset($getOrderRes['id'])) {
+    $existingOrder->id = $getOrderRes['id'];
 
-
-if (isset($getOrderRes['meta'])) {
     if ($orderBeru['status'] == 'PROCESSING' && $orderBeru['substatus'] == 'STARTED') {
         $details = "paymentType: " . $orderBeru['paymentType'] . " paymentMethod: " . $orderBeru['paymentMethod'];
         $resSetInWork = $existingOrder->setInWork($details);

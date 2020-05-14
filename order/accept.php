@@ -71,7 +71,7 @@ $newOrder->name = $orderBeru['id'];
 $getOrderRes = $newOrder->getByName();
 
 
-if (isset($getOrderRes['meta'])) {
+if (isset($getOrderRes['id'])) {
     http_response_code(200);
     echo $jsonOutput = '{
           "order":

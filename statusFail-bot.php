@@ -26,7 +26,6 @@ $ordersMS = new OrderMS();
 $state = '327c0111-75c5-11e5-7a40-e89700139936';
 $ordersWaitPayment = $ordersMS->getAllBeru($state);
 
-
 if (sizeof($ordersWaitPayment) > 0) {
     foreach ($ordersWaitPayment as $orderWaitPayment) {
         $ordersMS->id = $orderWaitPayment['_id'];
@@ -34,7 +33,6 @@ if (sizeof($ordersWaitPayment) > 0) {
 
         $orderBeru = new Order($orderWaitPayment['name']);
         $response = $orderBeru->getOrder();
-
         $orderBeruDetails = json_decode($response, true)['order'];
         if ($orderBeruDetails['status'] == 'CANCELLED') {
             $details = "status: CANCELLED, substatus: " . $orderBeruDetails['substatus'];
@@ -43,8 +41,9 @@ if (sizeof($ordersWaitPayment) > 0) {
             $message = 'ОШИБКА обновления статуса CANCELLED заказа ' . $ordersMS->name;
             Custom::sendErrorTelegram($resSetCanceled, $message, 'statusFail-bot', true);
 
-        } elseif ($orderBeruDetails['status'] == 'PROCESSING' && $orderBeruDetails['substatus'] == 'STARTED') {
-            $details = "paymentType: " . $orderBeru['paymentType'] . " paymentMethod: " . $orderBeru['paymentMethod'];
+        }
+        elseif ($orderBeruDetails['status'] == 'PROCESSING' && $orderBeruDetails['substatus'] == 'STARTED') {
+            $details = "paymentType: " . $orderBeruDetails['paymentType'] . " paymentMethod: " . $orderBeruDetails['paymentMethod'];
             $resSetInWork = $ordersMS->setInWork($details);
 
             $message = 'ОШИБКА обновления статуса STARTED заказа ' . $ordersMS->name;

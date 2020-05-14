@@ -143,9 +143,7 @@ class OrderMS
                 },
                 {
                     "id": "547ffa0e-ef8e-11e6-7a31-d0fd0021d13f",
-                    "value": {
-                        "value": "' . $addressComment . '"
-                    }
+                    "value": "' . $addressComment . '"
                 },
                 {
                     "id": "4552a58b-46a8-11e7-7a34-5acf002eb7ad",

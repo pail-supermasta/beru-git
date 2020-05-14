@@ -1,0 +1,4 @@
+[13-May-2020 18:31:54 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type Avaks\Beru\Order as array in C:\Users\User\Documents\beru.ltplk.ru\statusFail-bot.php:47
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Documents\beru.ltplk.ru\statusFail-bot.php on line 47
