@@ -26,4 +26,5 @@ use Avaks\Custom\Custom;
 // match
 //if no match Beru->MS create order in MS
 
+// check if order in beru comnfirmed - if not - confirm
 
