@@ -39,7 +39,7 @@ class OrderMS
         return isset((json_decode($res, true))['rows'][0]) ? (json_decode($res, true))['rows'][0] : $res;
     }
 
-    public function getAllBeru($states)
+    public function getAllBeru($states = false, $period = false)
     {
         $collection = (new MSSync())->MSSync;
         //Маркет
@@ -50,6 +50,10 @@ class OrderMS
 
         if ($states != false) {
             $filter['_state'] = $states;
+        }
+
+        if ($period != false) {
+            $filter['created'] = $period;
         }
         $productCursor = $collection->customerorder->find($filter)->toArray();
         return $productCursor;
@@ -64,7 +68,7 @@ class OrderMS
 
         $position = array(
             "quantity" => $item['count'],
-            "price" => $item['price'] * 100,
+            "price" => $product->price * 100,
             "discount" => 0,
             "vat" => 0,
             "assortment" =>
@@ -232,6 +236,33 @@ class OrderMS
             //if no errors - remove file
             return $res;
         }
+
+    }
+
+    public function setDSHSum($oldDescription, $DSHSumNum, $DSHSumComment)
+    {
+
+
+        /*удалить двойные ковычки*/
+        $oldDescription = str_replace('"', '', $oldDescription);
+
+        /*удалить новую строку*/
+        $oldDescription = preg_replace('/\s+/', ' ', trim($oldDescription));
+
+
+        $put_data = array();
+        $attribute = array();
+
+        $attribute['id'] = '535dd809-1db1-11ea-0a80-04c00009d6bf';
+        $attribute['value'] = $DSHSumNum;
+        $put_data['attributes'][] = $attribute;
+        $put_data['description'] = $oldDescription .' '.$DSHSumComment;
+
+        $postdata = json_encode($put_data,JSON_UNESCAPED_UNICODE);
+
+        $res = '';
+        $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
+        return $res;
 
     }
 }

@@ -14,6 +14,7 @@ use Avaks\MS\MSSync;
 class Product
 {
     public $id;
+    public $price;
 
     public function findByID_BERU($idBeru)
     {
@@ -22,6 +23,7 @@ class Product
 
         $productCursor = $collection->product->findOne($filter);
         $this->id = $productCursor->_id ?? null;
+        $this->price = $productCursor->_attributes['Цена BERU'] ?? 0;
     }
 
     public function findByBarcode($barcode)
@@ -42,6 +44,6 @@ class Product
     }
 }
 
-/*require_once '../vendor/autoload.php';
+/*require_once '../../vendor/autoload.php';
 $product = new Product();
-$product->findByID_BERU('BG010/01/DarkBlue');*/
+$product->findByID_BERU('AV71105');*/

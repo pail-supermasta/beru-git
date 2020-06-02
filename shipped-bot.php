@@ -43,5 +43,35 @@ if (isset($ordersBeruRes['orders'])) {
     }
 }
 
+// fallback if failed setToShip in MS
+$ordersMS = new OrderMS();
+//В работе
+$state = 'ecf45f89-f518-11e6-7a69-9711000ff0c4';
+$ordersBeruReadyToShip = $ordersMS->getAllBeru($state);
+if (isset($ordersBeruRes['orders'])){
+    foreach ($ordersBeruReadyToShip as $orderBeruReady) {
+        var_dump($ordersBeruRes['orders']);
+        die();
+        $key = array_search($orderBeruReady['name'], array_column($ordersBeruRes['orders'], 'id'));
+        if (!is_bool($key) && !isset($ordersBeruRes['orders'][$key]['cancelRequested'])) {
+            $ordersMS->id = $orderBeruReady['id'];
+            $ordersMS->name = $orderBeruReady['name'];
+
+            $res = $ordersMS->setToShip();
+            var_dump($ordersMS->name );
+            die();
+            //if errors continue to next order
+            $message = 'ОШИБКА setToShip заказа ' . $ordersMS->name;
+            $continue = Custom::sendErrorTelegram($res, $message, 'setToShip', false, true);
+            if ($continue) {
+                continue;
+            } else {
+//            unlink('files/labels/' . $ordersBeruRes['orders'][$key] . '.pdf');
+            }
+        }
+    }
+}
+
+
 
 

@@ -111,8 +111,13 @@ $message = 'ОШИБКА создания заказа ' . $orderBeru['id'];
 Custom::sendErrorTelegram($newOrderRes, $message, 'accept', true);
 
 
-http_response_code(200);
-echo $jsonOutput = '{
+// check if order created in MS
+$getOrderRes = $newOrder->getByName();
+
+
+if (isset($getOrderRes['id'])) {
+    http_response_code(200);
+    echo $jsonOutput = '{
           "order":
           {
             "accepted": true,
@@ -120,11 +125,17 @@ echo $jsonOutput = '{
           }
         }';
 
-$newOrderRes = json_decode($newOrderRes, true);
-$orderLinkMS = $newOrderRes['meta']['uuidHref'];
+    $newOrderRes = json_decode($newOrderRes, true);
+    $orderLinkMS = $newOrderRes['meta']['uuidHref'];
 
-$orderId = $orderBeru['id'];
-$end = microtime(TRUE);
-telegram("Заказ [$orderId]($orderLinkMS) POST /order/accept took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
+    $orderId = $orderBeru['id'];
+    $end = microtime(TRUE);
+    telegram("Заказ [$orderId]($orderLinkMS) POST /order/accept took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
+
+} else {
+    http_response_code(200);
+    $message = 'ОШИБКА создания заказа ' . $orderBeru['id'];
+    telegram($message, '-427337827', 'Markdown');
+}
 
 
