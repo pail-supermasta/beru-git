@@ -39,7 +39,7 @@ class Order
     {
         $variables = '';
         if ($data != false) {
-            $variables = "?$data";
+            $variables = "$data";
         }
         $res = Curl::execute("orders.json$variables");
         return $res;

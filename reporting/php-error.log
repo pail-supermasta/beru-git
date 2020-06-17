@@ -1,0 +1,15 @@
+[04-Jun-2020 13:00:53 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 122
+[04-Jun-2020 13:00:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 129
+[04-Jun-2020 13:11:38 UTC] PHP Notice:  Undefined index: description in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 131
+[04-Jun-2020 13:11:44 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: File "files/new/~$marketplace_services_21621240_01-05-2020_04-06-2020.xlsx" does not exist. in C:\Users\User\Documents\beru.ltplk.ru\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php:137
+Stack trace:
+#0 C:\Users\User\Documents\beru.ltplk.ru\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(126): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('files/new/~$mar...')
+#1 C:\Users\User\Documents\beru.ltplk.ru\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(91): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('files/new/~$mar...')
+#2 C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php(44): PhpOffice\PhpSpreadsheet\IOFactory::load('files/new/~$mar...')
+#3 C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php(28): getDSH('~$marketplace_s...')
+#4 {main}
+  thrown in C:\Users\User\Documents\beru.ltplk.ru\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 137
+[05-Jun-2020 08:14:50 UTC] PHP Notice:  Undefined index: description in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 130
+[05-Jun-2020 08:14:54 UTC] PHP Notice:  Undefined index: description in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 130
+[11-Jun-2020 13:34:18 UTC] PHP Notice:  Undefined index: description in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 130
+[11-Jun-2020 13:34:19 UTC] PHP Notice:  Undefined index: description in C:\Users\User\Documents\beru.ltplk.ru\reporting\parseExcel.php on line 130

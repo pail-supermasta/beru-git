@@ -51,16 +51,17 @@ function getDSH($inputFileName)
 
         $sheet = $spreadsheet->getSheetByName('Размещение товаров на Беру');;
         $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:O' . $maxCell);
+        $data = $sheet->rangeToArray('A2:Q' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
 
             foreach ($data as $orderData) {
 
+
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => (float)$orderData[14]];
+                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => (float)$orderData[16]];
                 } else {
-                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на Беру'] + (float)$orderData[14];
+                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на Беру'] + (float)$orderData[16];
                     $orders[$orderData[0]] = ['Размещение товаров на Беру' => $plusDshSum];
 
                 }
@@ -121,12 +122,12 @@ function setDSH($orders)
         $orderDetails = $orderMS->getByName();
         $orderMS->id = $orderDetails['id'];
 
-        $razmeshComment = isset($orderDSHs['Размещение товаров на Беру']) ? "Размещение товаров на Беру: " . $orderDSHs['Размещение товаров на Беру'] : '';
-        $agentComment = isset($orderDSHs['Агентское вознаграждение']) ? "Агентское вознаграждение: " . $orderDSHs['Агентское вознаграждение'] : '';
+//        $razmeshComment = isset($orderDSHs['Размещение товаров на Беру']) ? "Размещение товаров на Беру: " . $orderDSHs['Размещение товаров на Беру'] : '';
+//        $agentComment = isset($orderDSHs['Агентское вознаграждение']) ? "Агентское вознаграждение: " . $orderDSHs['Агентское вознаграждение'] : '';
 
-        $DSHSumComment = "\n$razmeshComment $agentComment";
+//        $DSHSumComment = "\n$razmeshComment $agentComment";
 
-        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], $DSHSumComment);
+        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], '');
         var_dump($orderName, $orderDSHs['dshSum']);
 
         if (strpos($result, 'обработка-ошибок') > 0 || $result == '' || $result == false) {

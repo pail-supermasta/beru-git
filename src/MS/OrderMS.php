@@ -90,7 +90,7 @@ class OrderMS
 
         /*ждем оплаты*/
         $state = '327c0111-75c5-11e5-7a40-e89700139936';
-        $logisticsProvider = '0 Нужна доставка';
+        $logisticsProvider = '1 Не нужна доставка';
         $addressComment = 'тел Диспетчер +7(495)739-21-15';
 
         $postdata = '{
@@ -114,6 +114,13 @@ class OrderMS
                     "mediaType": "application/json"
                 }
             },
+            "contract" : {
+                "meta" : {
+                  "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/ff75e854-a182-11ea-0a80-020900039b7d",
+                  "type" : "contract",
+                  "mediaType" : "application/json"
+                }
+              },
             "agent": {
                 "meta": {
                     "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/782c484a-6749-11ea-0a80-03f900263ee6",
