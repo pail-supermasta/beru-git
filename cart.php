@@ -61,13 +61,65 @@ validate($config, $beruAuth);
 
 
 $collection = (new MSSync())->MSSync;
-
 $stocks = new Stocks();
-$stockMS = $stocks->getAll();
-
 $product = new Product();
-$productCursor = $product->findWithID_BERU();
 
+/*$jsonBeruPost = '{
+    "cart": {
+        "currency": "RUR",
+        "items": [
+            {
+                "feedId": 737072,
+                "offerId": "PROF",
+                "offerName": "Набор пластика UNID для 3D ручки UNID PRO-F (по 10м. 3 цвета свеиящихся в темноте, в коробке)",
+                "subsidy": 0,
+                "count": 5,
+                "params": "Вес: 0.08 кг",
+                "fulfilmentShopId": 618886,
+                "sku": "100929014846",
+                "shopSku": "PROF"
+            },
+            {
+                "feedId": 737072,
+                "offerId": "305003",
+                "offerName": "Утюг Morphy Richards 305003 голубой",
+                "subsidy": 0,
+                "count": 55,
+                "params": "Цвет товара: голубой",
+                "fulfilmentShopId": 618886,
+                "sku": "100825129814",
+                "shopSku": "305003"
+            }
+        ],
+        "delivery": {
+            "region": {
+                "id": 39,
+                "name": "Ростов-на-Дону",
+                "type": "CITY",
+                "parent": {
+                    "id": 121146,
+                    "name": "Городской округ Ростов-на-Дону",
+                    "type": "SUBJECT_FEDERATION_DISTRICT",
+                    "parent": {
+                        "id": 11029,
+                        "name": "Ростовская область",
+                        "type": "SUBJECT_FEDERATION",
+                        "parent": {
+                            "id": 26,
+                            "name": "Южный федеральный округ",
+                            "type": "COUNTRY_DISTRICT",
+                            "parent": {
+                                "id": 225,
+                                "name": "Россия",
+                                "type": "COUNTRY"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}';*/
 
 $cart = json_decode($jsonBeruPost, true);
 $cartItems = $cart['cart']['items'];
@@ -76,35 +128,34 @@ $cartItems = $cart['cart']['items'];
 foreach ($cartItems as $cartItem) {
     $productSKU = $cartItem['offerId'];
 
-    $skuFound = false;
-
-    foreach ($productCursor as $product) {
-        $product_id = null;
-
-        if ($product['_attributes']['ID_BERU'] == $productSKU) {
-            $product_id = $product['_id'];
+    $product->findByID_BERU($productSKU);
 
 
-            if ($stockMS["$product_id"]['available'] >= $cartItem['count']) {
-                $count = $cartItem['count'];
-            } elseif ($stockMS["$product_id"]['available'] < $cartItem['count'] && $stockMS["$product_id"]['available'] > 0) {
-                $count = $stockMS["$product_id"]['available'];
-            } else {
-                $count = 0;
-            }
-
-            $item = array(
-                'feedId' => $cartItem['feedId'],
-                'offerId' => "" . $cartItem['offerId'] . "",
-                'count' => $count
-            );
-            $items[] = $item;
+    $product_id = null;
 
 
-            $skuFound = true;
-            break;
-        }
+    $stocks->productId = $product->id;
+    $stocks->getMPNFFByIndex();
+
+    if ($stocks->available >= $cartItem['count']) {
+        $count = $cartItem['count'];
+    } elseif ($stocks->available < $cartItem['count'] && $stocks->available > 0) {
+        $count = $stocks->available;
+    } else {
+        $count = 0;
     }
+
+
+
+
+    $item = array(
+        'feedId' => $cartItem['feedId'],
+        'offerId' => "" . $cartItem['offerId'] . "",
+        'count' => $count
+    );
+    $items[] = $item;
+
+
 }
 $response = array('cart' => array('items' => $items));
 

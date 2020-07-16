@@ -2,3 +2,13 @@
 Stack trace:
 #0 {main}
   thrown in C:\Users\User\Documents\beru.ltplk.ru\statusFail-bot.php on line 47
+[26-Jun-2020 12:11:53 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type Avaks\Beru\Stocks as array in C:\Users\User\Documents\beru.ltplk.ru\cart.php:139
+Stack trace:
+#0 {main}
+  thrown in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 139
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 159
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 161
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 161
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 159
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 161
+[26-Jun-2020 12:17:28 UTC] PHP Notice:  Undefined variable: stockMS in C:\Users\User\Documents\beru.ltplk.ru\cart.php on line 161

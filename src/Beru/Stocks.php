@@ -18,6 +18,7 @@ class Stocks
     public $available;
     public $updated;
     public $found;
+    public $productId;
 
     public function getMPNFF($idBeru)
     {
@@ -57,13 +58,29 @@ class Stocks
 
     }
 
+    public function getMPNFFByIndex()
+    {
+
+        $this->found = false;
+        $collection = (new MSSync())->MSSync;
+        $filter = ['_id' => $this->productId . '_48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
+
+        $stockCursor = $collection->report_stock_all->findOne($filter);
+        if (isset($stockCursor->_product)) {
+            $this->found = true;
+            $this->available = $stockCursor->stock - $stockCursor->reserve;
+            $this->updated = $stockCursor->updated;
+        }
+
+    }
+
     public function getAll()
     {
         $collection = (new MSSync())->MSSync;
         $filter = ['_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
         $stockCursor = $collection->report_stock_all->find($filter);
         $stockMS = array();
-        $available=0;
+        $available = 0;
         foreach ($stockCursor as $stock) {
             if (!isset($stock['reserve'])) {
                 $available = $stock['stock'];

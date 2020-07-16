@@ -143,8 +143,14 @@ if (isset($getOrderRes['id'])) {
     $end = microtime(TRUE);
     telegram("Заказ [$existingOrder->name]($orderLinkMS) $existingOrder->humanState POST /order/status took " . round(($end - $start), 2) . " seconds.", '-427337827', 'Markdown');
 
+    http_response_code(200);
+    echo 'Статус обновлен.';
+    die();
 } else {
     http_response_code(400);
     echo 'Заказ не найден.';
     die();
 }
+
+//$end = microtime(TRUE);
+//echo round(($end - $start), 2);
