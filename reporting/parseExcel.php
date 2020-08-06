@@ -119,6 +119,7 @@ function setDSH($orders)
     foreach ($orders as $orderName => $orderDSHs) {
 
         $orderMS->name = $orderName;
+        $orderMS->id=null;
         $orderDetails = $orderMS->getByName();
         $orderMS->id = $orderDetails['id'];
 
@@ -131,7 +132,7 @@ function setDSH($orders)
         var_dump($orderName, $orderDSHs['dshSum']);
 
         if (strpos($result, 'обработка-ошибок') > 0 || $result == '' || $result == false) {
-            var_dump($orderName, $result, "ERROR!!!1");
+            var_dump($orderMS, $result, "ERROR!!!1");
             die();
         }
     }
