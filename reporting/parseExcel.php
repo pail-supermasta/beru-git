@@ -122,6 +122,9 @@ function setDSH($orders)
         $orderMS->id=null;
         $orderDetails = $orderMS->getByName();
         $orderMS->id = $orderDetails['id'];
+        if(!isset($orderDetails['description'])){
+            $orderDetails['description'] = '';
+        }
 
 //        $razmeshComment = isset($orderDSHs['Размещение товаров на Беру']) ? "Размещение товаров на Беру: " . $orderDSHs['Размещение товаров на Беру'] : '';
 //        $agentComment = isset($orderDSHs['Агентское вознаграждение']) ? "Агентское вознаграждение: " . $orderDSHs['Агентское вознаграждение'] : '';

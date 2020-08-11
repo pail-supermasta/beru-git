@@ -25,7 +25,7 @@ class Order
 
     private function Download($result)
     {
-        $path = 'files/labels/' . $this->id . '.pdf';
+        $path = '/home/beru-service/public_html/files/labels/' . $this->id . '.pdf';
         file_put_contents($path, $result);
     }
 

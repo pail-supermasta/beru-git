@@ -12,7 +12,7 @@ ini_set("error_log", "php-error.log");
 require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
 
-$config = require_once '../beru_config/config.php';
+$config = require_once 'config.php';
 
 use Avaks\Beru\Order;
 use Avaks\MS\OrderMS;

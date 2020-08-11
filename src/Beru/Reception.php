@@ -13,7 +13,8 @@ class Reception
 {
     private function Download($result)
     {
-        $path = 'files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
+//        $path = 'files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
+        $path = '/home/beru-service/public_html/files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
         file_put_contents($path, $result);
     }
 

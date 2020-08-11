@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 
 require_once 'vendor/autoload.php';
 
-$config = require_once '../beru_config/config.php';
+$config = require_once 'config.php';
 
 use Avaks\MS\OrderMS;
 use Avaks\MS\MSSync;

@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set("error_log", "temp_stock_bot.log");
 
 require_once 'vendor/autoload.php';
-$config = require_once '../beru_config/config.php';
+$config = require_once 'config.php';
 
 use Avaks\MS\MSSync;
 use Avaks\Beru\Stocks;

@@ -2,35 +2,32 @@
 /**
  * Created by PhpStorm.
  * User: User
- * Date: 06.04.2020
- * Time: 12:20
+ * Date: 06.08.2020
+ * Time: 16:37
  */
 
-//timeout 10 секунд.
-
+error_reporting(E_ALL);
 $start = microtime(TRUE);
-// required headers
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Access-Control-Allow-Origin, Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 
-error_reporting(E_ALL);
 ini_set("error_log", "php-error.log");
 
 
+require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
-$config = require_once '../beru_config/config.php';
+$config = require_once 'config.php';
 
 
-// get posted data
 $jsonBeruPost = file_get_contents("php://input");
 $beruAuth = $_GET["auth-token"];
 
 
 if (empty($jsonBeruPost)) {
-    error_log('Post-body is empty ' . $orderBeru);
+    error_log('Post-body is empty ' . $jsonBeruPost);
     http_response_code(400);
     die();
 }
@@ -38,7 +35,6 @@ if (empty($jsonBeruPost)) {
 function validate($config, $beruAuth)
 {
 
-    //from post query
     if ($config['auth-token'] == $beruAuth) {
         return true;
     } else {
@@ -49,35 +45,171 @@ function validate($config, $beruAuth)
 }
 
 validate($config, $beruAuth);
+$urlLogin = 'https://api.backendserver.ru/api/v1/auth/login';
+$userData = array("username" => "mongodb@техтрэнд", "password" => "!!@th9247t924");
+
+$urlProduct = 'https://api.backendserver.ru/api/v1/product';
+$urlStock = 'https://api.backendserver.ru/api/v1/report_stock_all';
 
 
+function getToken($url, $data)
+{
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+    $res = curl_exec($ch);
+    $result = json_decode($res, true);
+    curl_close($ch);
+    return $result['token'];
+}
+
+function getData($urlProduct, $data, $token)
+{
+    $headers = array(
+        'Content-Type: application/x-www-form-urlencoded',
+        sprintf('Authorization: Bearer %s', $token)
+    );
+
+    $data_string = http_build_query($data);
+
+    $ch = curl_init($urlProduct);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_setopt($ch, CURLOPT_URL, $urlProduct . '/?' . $data_string);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    $res = curl_exec($ch);
+    $result = json_decode($res, true);
+    curl_close($ch);
+
+    return $result;
+}
+
+function getQuantity($urlProduct, $token)
+{
+
+    $data['limit'] = 999999;
+    $data['offset'] = 0;
+    $data['project'] = json_encode(array(
+            '_id' => true,
+            '_product' => true,
+            'quantity' => true,
+            'reserve' => true,
+            'stock' => true,
+            'updated' => true
+        )
+    );
+
+    $data['filter'] = json_encode(array('_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'));
+
+    $headers = array(
+        'Content-Type: application/x-www-form-urlencoded',
+        sprintf('Authorization: Bearer %s', $token)
+    );
+
+    $data_string = http_build_query($data);
+    $ch = curl_init($urlProduct);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_setopt($ch, CURLOPT_URL, $urlProduct . '/?' . $data_string);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+    $res = curl_exec($ch);
+    $result = json_decode($res, true);
+    curl_close($ch);
+
+    return $result;
+}
 
 
+function findValueByKey($inputArray, $findKey)
+{
+    foreach ($inputArray as $key1 => $value1) {
+        if ($findKey == $key1) {
+            return $value1;
+        } elseif (is_array($value1)) {
+            $tmp = findValueByKey($value1, $findKey);
+            if ($tmp !== false) {
+                return $tmp;
+            }
+        }
+    }
+    return false;
+}
+
+$token = getToken($urlLogin, $userData);
+
+$data['filter'] = json_encode(array('attributes.id' => '032490b9-6d8f-11ea-0a80-027100264b27'));
+
+$data['limit'] = 9999;
+$data['offset'] = 0;
+$data['project'] = json_encode(array(
+        '_id' => true,
+        '_attributes.ID_BERU' => true
+    )
+);
+
+$products = getData($urlProduct, $data, $token);
+
+
+$stocks = getQuantity($urlStock, $token);
+$stockMS = [];
+
+if ($stocks['rows']) {
+    foreach ($stocks['rows'] as $k => $stock) {
+
+        if (!isset($stock['reserve'])) {
+            $available = $stock['stock'];
+        } else {
+            $available = $stock['stock'] - $stock['reserve'];
+        }
+
+        if ($available <= 0) {
+            $available = 0;
+        }
+        $stockMS[$stock['_product']] = array('available' => $available, 'updated' => $stock['updated']);
+    }
+}
 $jsonBeruPost = json_decode($jsonBeruPost, true);
+
 
 if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
     $skus = array();
 
     foreach ($jsonBeruPost['skus'] as $skuValue) {
-        $temp_stock_json = file_get_contents("temp_stock.json");
-        $temp_stock = json_decode($temp_stock_json, true);
-        if(isset($temp_stock[$skuValue])){
-            $skuStock = $temp_stock[$skuValue];
-        } else{
-            $skuStock = 0;
+
+        $skuFound = false;
+
+        foreach ($products['rows'] as $product) {
+            $product_id = null;
+
+            if ($product['_attributes']['ID_BERU'] == $skuValue) {
+                $product_id = $product['_id'];
+
+                $skuItem = array(
+                    'sku' => $skuValue,
+                    'warehouseId' => $jsonBeruPost['warehouseId'],
+                    'items' => array(array(
+                        'type' => 'FIT',
+                        'count' => $stockMS["$product_id"]['available'],
+                        'updatedAt' => $stockMS["$product_id"]['updated'],
+                    ))
+                );
+                $skus[] = $skuItem;
+                $skuFound = true;
+                break;
+            }
         }
-
-        $skuItem = array(
-            'sku' => $skuValue,
-            'warehouseId' => $jsonBeruPost['warehouseId'],
-            'items' => array(array(
-                'type' => 'FIT',
-                'count' => $skuStock,
-                'updatedAt' => date('c'),
-            ))
-        );
-        $skus[] = $skuItem;
-
+        if ($skuFound == true) continue;
 
 
     }

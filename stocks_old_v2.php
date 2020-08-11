@@ -6,7 +6,7 @@
  * Time: 12:20
  */
 
-//timeout 5.5 секунд.
+//timeout 10 секунд.
 
 $start = microtime(TRUE);
 // required headers
@@ -20,13 +20,9 @@ error_reporting(E_ALL);
 ini_set("error_log", "php-error.log");
 
 
-require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
 $config = require_once 'config.php';
 
-use Avaks\MS\MSSync;
-use Avaks\Beru\Stocks;
-use Avaks\Beru\Product;
 
 // get posted data
 $jsonBeruPost = file_get_contents("php://input");
@@ -55,15 +51,6 @@ function validate($config, $beruAuth)
 validate($config, $beruAuth);
 
 
-$collection = (new MSSync())->MSSync;
-
-//report_stock_all
-$stocks = new Stocks();
-$stockMS = $stocks->getAll();
-
-//product
-$product = new Product();
-$productCursor = $product->findWithID_BERU();
 
 
 $jsonBeruPost = json_decode($jsonBeruPost, true);
@@ -72,30 +59,25 @@ if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
     $skus = array();
 
     foreach ($jsonBeruPost['skus'] as $skuValue) {
-
-        $skuFound = false;
-
-        foreach ($productCursor as $product) {
-            $product_id = null;
-
-            if ($product['_attributes']['ID_BERU'] == $skuValue) {
-                $product_id = $product['_id'];
-
-                $skuItem = array(
-                    'sku' => $skuValue,
-                    'warehouseId' => $jsonBeruPost['warehouseId'],
-                    'items' => array(array(
-                        'type' => 'FIT',
-                        'count' => $stockMS["$product_id"]['available'],
-                        'updatedAt' => $stockMS["$product_id"]['updated'],
-                    ))
-                );
-                $skus[] = $skuItem;
-                $skuFound = true;
-                break;
-            }
+        $temp_stock_json = file_get_contents("temp_stock.json");
+        $temp_stock = json_decode($temp_stock_json, true);
+        if(isset($temp_stock[$skuValue])){
+            $skuStock = $temp_stock[$skuValue];
+        } else{
+            $skuStock = 0;
         }
-        if ($skuFound == true) continue;
+
+        $skuItem = array(
+            'sku' => $skuValue,
+            'warehouseId' => $jsonBeruPost['warehouseId'],
+            'items' => array(array(
+                'type' => 'FIT',
+                'count' => $skuStock,
+                'updatedAt' => date('c'),
+            ))
+        );
+        $skus[] = $skuItem;
+
 
 
     }

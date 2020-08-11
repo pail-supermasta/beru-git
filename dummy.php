@@ -8,7 +8,7 @@
 
 require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
-$config = require_once '../beru_config/config.php';
+$config = require_once 'config.php';
 
 use Avaks\MS\MSSync_dummy;
 use Avaks\Beru\Stocks;

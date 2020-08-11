@@ -217,7 +217,7 @@ class OrderMS
     {
 
         //get file
-        $content = file_get_contents('files/labels/' . $this->name . '.pdf');
+        $content = file_get_contents('/home/beru-service/public_html/files/labels/' . $this->name . '.pdf');
         $content = base64_encode($content);
 
         if ($content === FALSE) {
