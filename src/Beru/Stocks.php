@@ -11,6 +11,7 @@ namespace Avaks\Beru;
 
 use Avaks\MS\MSSync;
 use Avaks\Beru\Product;
+use Avaks\BackendAPI;
 
 
 class Stocks
@@ -20,56 +21,30 @@ class Stocks
     public $found;
     public $productId;
 
-    public function getMPNFF($idBeru)
-    {
-
-        $this->found = false;
-        $collection = (new MSSync())->MSSync;
-
-        $product = new Product();
-        $product->findByID_BERU($idBeru);
-        $filter = ['_product' => $product->id, '_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
-
-        $stockCursor = $collection->report_stock_all->findOne($filter);
-        if (isset($stockCursor->_product)) {
-            $this->found = true;
-            $this->available = $stockCursor->stock - $stockCursor->reserve;
-            $this->updated = $stockCursor->updated;
-        }
-
-    }
-
-    public function getMPNFFByBarcode($barcode)
-    {
-
-        $this->found = false;
-        $collection = (new MSSync())->MSSync;
-
-        $product = new Product();
-        $product->findByBarcode($barcode);
-        $filter = ['_product' => $product->id, '_store' => '48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
-
-        $stockCursor = $collection->report_stock_all->findOne($filter);
-        if (isset($stockCursor->_product)) {
-            $this->found = true;
-            $this->available = $stockCursor->stock - $stockCursor->reserve;
-            $this->updated = $stockCursor->updated;
-        }
-
-    }
-
     public function getMPNFFByIndex()
     {
 
-        $this->found = false;
-        $collection = (new MSSync())->MSSync;
-        $filter = ['_id' => $this->productId . '_48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'];
+        $backendAPI = new BackendAPI();
 
-        $stockCursor = $collection->report_stock_all->findOne($filter);
-        if (isset($stockCursor->_product)) {
+        $data['filter'] = json_encode(array('_id' => $this->productId . '_48de3b8e-8b84-11e9-9ff4-34e8001a4ea1'));
+
+        $data['project'] = json_encode(array(
+                '_id' => true,
+                '_product' => true,
+                'quantity' => true,
+                'reserve' => true,
+                'stock' => true,
+                'updated' => true
+            )
+        );
+
+        $stockCursor = $backendAPI->getData($backendAPI->urlStock, $data);
+        $stockCursor = $stockCursor['rows'][0];
+
+        if (isset($stockCursor['_product'])) {
             $this->found = true;
-            $this->available = $stockCursor->stock - $stockCursor->reserve;
-            $this->updated = $stockCursor->updated;
+            $this->available = $stockCursor['stock'] - $stockCursor['reserve'];
+            $this->updated = $stockCursor['updated'];
         }
 
     }
@@ -97,8 +72,3 @@ class Stocks
         return $stockMS;
     }
 }
-
-/*require_once '../vendor/autoload.php';
-$stocks = new Stocks();
-$stocks->getMPNFF('A277.14');
-echo $stocks->available;*/

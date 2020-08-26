@@ -131,20 +131,6 @@ function getQuantity($urlProduct, $token)
 }
 
 
-function findValueByKey($inputArray, $findKey)
-{
-    foreach ($inputArray as $key1 => $value1) {
-        if ($findKey == $key1) {
-            return $value1;
-        } elseif (is_array($value1)) {
-            $tmp = findValueByKey($value1, $findKey);
-            if ($tmp !== false) {
-                return $tmp;
-            }
-        }
-    }
-    return false;
-}
 
 $token = getToken($urlLogin, $userData);
 

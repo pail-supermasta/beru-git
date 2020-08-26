@@ -4347,3 +4347,33 @@ Stack trace:
 [07-Aug-2020 11:43:24 UTC] PHP Notice:  Undefined variable: jsonBeruPost in C:\Users\User\Documents\beru\stocks_project.php on line 192
 [11-Aug-2020 08:58:58 UTC] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in C:\Users\User\Documents\beru\reception-transfer-act-bot.php on line 15
 [11-Aug-2020 08:58:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.;C:\php\pear') in C:\Users\User\Documents\beru\reception-transfer-act-bot.php on line 15
+[25-Aug-2020 10:28:07 UTC] PHP Notice:  Undefined index: token in C:\Users\User\Documents\beru\src\BackendAPI.php on line 31
+[25-Aug-2020 10:28:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Avaks\Beru\getData() in C:\Users\User\Documents\beru\src\Beru\Product.php:42
+Stack trace:
+#0 C:\Users\User\Documents\beru\cart_backapi.php(130): Avaks\Beru\Product->findByID_BERU('PROF')
+#1 {main}
+  thrown in C:\Users\User\Documents\beru\src\Beru\Product.php on line 42
+[25-Aug-2020 10:28:50 UTC] PHP Notice:  Undefined index: token in C:\Users\User\Documents\beru\src\BackendAPI.php on line 32
+[25-Aug-2020 10:28:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Avaks\Beru\getData() in C:\Users\User\Documents\beru\src\Beru\Product.php:42
+Stack trace:
+#0 C:\Users\User\Documents\beru\cart_backapi.php(130): Avaks\Beru\Product->findByID_BERU('PROF')
+#1 {main}
+  thrown in C:\Users\User\Documents\beru\src\Beru\Product.php on line 42
+[25-Aug-2020 10:30:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Avaks\Beru\getData() in C:\Users\User\Documents\beru\src\Beru\Product.php:43
+Stack trace:
+#0 C:\Users\User\Documents\beru\cart_backapi.php(130): Avaks\Beru\Product->findByID_BERU('PROF')
+#1 {main}
+  thrown in C:\Users\User\Documents\beru\src\Beru\Product.php on line 43
+[25-Aug-2020 10:30:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Avaks\Beru\getData() in C:\Users\User\Documents\beru\src\Beru\Product.php:43
+Stack trace:
+#0 C:\Users\User\Documents\beru\cart_backapi.php(130): Avaks\Beru\Product->findByID_BERU('PROF')
+#1 {main}
+  thrown in C:\Users\User\Documents\beru\src\Beru\Product.php on line 43
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: value in C:\Users\User\Documents\beru\sync-prices-bot.php on line 36
+[25-Aug-2020 12:58:27 UTC] PHP Notice:  Undefined index: marketSku in C:\Users\User\Documents\beru\sync-prices-bot.php on line 37
+[25-Aug-2020 13:04:27 UTC] PHP Notice:  Undefined index: marketSku in C:\Users\User\Documents\beru\sync-prices-bot.php on line 35

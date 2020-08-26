@@ -10,6 +10,7 @@ namespace Avaks\MS;
 
 use Avaks\Beru\Product;
 use Avaks\Custom\Custom;
+use Avaks\BackendAPI;
 
 class OrderMS
 {
@@ -41,13 +42,11 @@ class OrderMS
 
     public function getAllBeru($states = false, $period = false)
     {
-        $collection = (new MSSync())->MSSync;
-        //Маркет
-        $filter = [
+        $backendAPI = new BackendAPI();
+        $filter = array(
             '_agent' => '782c484a-6749-11ea-0a80-03f900263ee6',
             'deleted' => ['$exists' => false]
-        ];
-
+        );
         if ($states != false) {
             $filter['_state'] = $states;
         }
@@ -55,8 +54,15 @@ class OrderMS
         if ($period != false) {
             $filter['created'] = $period;
         }
-        $productCursor = $collection->customerorder->find($filter)->toArray();
-        return $productCursor;
+
+        $data['filter'] = json_encode($filter);
+        $data['limit'] = 9999;
+        $data['offset'] = 0;
+
+        $orderCursor = $backendAPI->getData($backendAPI->urlOrder, $data);
+        $orderCursor = $orderCursor['rows'];
+
+        return $orderCursor;
     }
 
     public function fillPosition($item)
