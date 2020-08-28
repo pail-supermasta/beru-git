@@ -59,6 +59,8 @@ function validate($config, $beruAuth)
 
 validate($config, $beruAuth);
 
+
+$collection = (new MSSync())->MSSync;
 $stocks = new Stocks();
 $product = new Product();
 
@@ -128,6 +130,7 @@ foreach ($cartItems as $cartItem) {
 
     $product->findByID_BERU($productSKU);
 
+
     $product_id = null;
 
 
@@ -141,6 +144,8 @@ foreach ($cartItems as $cartItem) {
     } else {
         $count = 0;
     }
+
+
 
 
     $item = array(

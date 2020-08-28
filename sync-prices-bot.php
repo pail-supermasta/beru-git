@@ -32,10 +32,13 @@ $apiProductsRes = $apiProducts->getAll();
 $offers = json_decode($apiProductsRes, true)['result']['offers'];
 $beruProductsApi = [];
 foreach ($offers as $offer) {
-    $beruProductsApi[$offer['shopSku']] = [
-        'price' => $offer['price']['value'],
-        'marketSku' => $offer['marketSku']
-    ];
+    if (isset($offer['price']['value']) && isset($offer['marketSku'])){
+        $beruProductsApi[$offer['shopSku']] = [
+            'price' => $offer['price']['value'],
+            'marketSku' => $offer['marketSku']
+        ];
+    }
+
 }
 $newPrices = [];
 $count = 0;
