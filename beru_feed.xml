@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2020-08-11 11:49">
+  <shop>
+    <name>Удивительный интернет-магазин</name>
+    <company>ООО «Новинки»</company>
+    <url>https://amaze.ru</url>
+    <currencies>
+      <currency id="RUR" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Медленноварка</category>
+      <category id="2">Насадки для пылесосов</category>
+      <category id="3">Суповарки электрические</category>
+      <category id="4">Пледы</category>
+      <category id="5">Прибор для очищения кожи</category>
+      <category id="6">Маски защитные</category>
+      <category id="7">Матрасы для кровати</category>
+      <category id="8">Коврики комнатные</category>
+      <category id="9">Обогреватели</category>
+      <category id="10">Игрушки интерактивные</category>
+      <category id="11">Кофемолки электрические</category>
+      <category id="12">Хлебопечи</category>
+      <category id="13">Аксессуары для кофемашин</category>
+      <category id="14">Пудры</category>
+      <category id="15">Тональные кремы</category>
+      <category id="16">Товары для животных</category>
+      <category id="17">Постельное белье</category>
+      <category id="18">Консервы овощные</category>
+      <category id="19">Кошельки</category>
+      <category id="20">Рюкзаки</category>
+      <category id="21">Щетки для уборки</category>
+      <category id="22">Ковер</category>
+      <category id="23">Кофе зерновой</category>
+      <category id="24">Электросамокаты</category>
+      <category id="25">Джинсы</category>
+      <category id="26">Грили электрические</category>
+      <category id="27">Маски для сна</category>
+      <category id="28">Корректоры осанки</category>
+      <category id="29">Очистители воздуха</category>
+      <category id="30">Хайлайтеры</category>
+      <category id="31">Саше ароматические</category>
+      <category id="32">Мониторы сердечной активности</category>
+      <category id="33">Соковыжималки электрические</category>
+      <category id="34">Пароочистители</category>
+      <category id="35">Книжная продукция</category>
+      <category id="36">Игрушки</category>
+      <category id="37">Маски тканевые</category>
+      <category id="38">Колонки</category>
+      <category id="39">Ручки</category>
+      <category id="40">3D-принтеры</category>
+      <category id="41">Настольные игры</category>
+      <category id="42">Трафареты для макияжа</category>
+      <category id="43">Микрофоны</category>
+      <category id="44">Предмет</category>
+      <category id="45">Ремешки для умных часов</category>
+      <category id="46">Измельчители электрические</category>
+      <category id="47">Развивающие игрушки</category>
+      <category id="48">Увлажнители</category>
+      <category id="49">Внешние аккумуляторы</category>
+      <category id="50">Воски для волос</category>
+      <category id="51">Косметические маски</category>
+      <category id="52">Скрабы</category>
+      <category id="53">Одеколон</category>
+      <category id="54">Бальзамы после бритья</category>
+      <category id="55">Гели для бритья</category>
+      <category id="56">Шампуни</category>
+      <category id="57">Кондиционеры для волос</category>
+      <category id="58">Лаки для волос</category>
+      <category id="59">Масла</category>
+      <category id="60">Парфюмерная вода</category>
+      <category id="61">Лампочки</category>
+      <category id="62">Светильники</category>
+      <category id="63">Прожекторы</category>
+      <category id="64">Сковороды</category>
+      <category id="65">Батарейки</category>
+      <category id="66">Удлинители строительные</category>
+      <category id="67">Разветвители</category>
+      <category id="68">Изоленты</category>
+      <category id="69">Пылесосы</category>
+      <category id="70">Вентиляторы</category>
+      <category id="71">Помады</category>
+      <category id="72">Парогенераторы</category>
+      <category id="73">Аромадиффузоры</category>
+      <category id="74">Платья</category>
+      <category id="75">Респираторы</category>
+      <category id="76">Книги</category>
+      <category id="77">Бритвы электрические</category>
+      <category id="78">Фиксаторы макияжа</category>
+      <category id="79">Бритвенные наборы</category>
+      <category id="80">Утюжки для волос</category>
+      <category id="81">Электровелосипеды</category>
+      <category id="82">Блески</category>
+      <category id="83">Ароматические капсулы</category>
+      <category id="84">Маска защитная</category>
+      <category id="85">Миксеры</category>
+      <category id="86">Ночники</category>
+      <category id="87">Основы под макияж</category>
+      <category id="88">Палетки косметические сменные</category>
+      <category id="89">Наволочки</category>
+      <category id="90">Игровые коврики</category>
+      <category id="91">Бронзеры</category>
+      <category id="92">Комплектующие для 3D</category>
+      <category id="93">Электроника</category>
+      <category id="94">Кофемашины</category>
+      <category id="95">Муссы</category>
+      <category id="96">Туши</category>
+      <category id="97">Доски гладильные</category>
+      <category id="98">Стеклоочистители электрические</category>
+      <category id="99">Компоты</category>
+      <category id="100">Наушники</category>
+      <category id="101">Энергетические добавки</category>
+      <category id="102">Средства для уборки</category>
+      <category id="103">Соус овощной</category>
+      <category id="104">Мясорубки электрические</category>
+      <category id="105">Оздоровительные аппараты</category>
+      <category id="106">Икра баклажанная</category>
+      <category id="107">Триммеры аккумуляторные</category>
+      <category id="108">Садовый инвентарь</category>
+      <category id="109">Маринады</category>
+      <category id="110">Расчески</category>
+      <category id="111">Аквариумы</category>
+      <category id="112">Томатная паста</category>
+      <category id="113">чистящие средства</category>
+      <category id="114">Салфетки для уборки</category>
+      <category id="115">Варенье</category>
+      <category id="116">Горшки для растений</category>
+      <category id="117">Икра кабачковая</category>
+      <category id="118">Планшеты</category>
+      <category id="119">Салфетки</category>
+      <category id="120">Чайники электрические</category>
+      <category id="121">Кондиционеры воздуха</category>
+      <category id="122">Смарт-часы</category>
+      <category id="123">Маски ветрозащитные</category>
+      <category id="124">Переноски для детей</category>
+      <category id="125">Плакаты</category>
+      <category id="126">Гироскутеры</category>
+      <category id="127">Батончики спортивные</category>
+      <category id="128">Мини-пылесосы</category>
+      <category id="129">Телевизоры</category>
+      <category id="130">Пароварки электрические</category>
+      <category id="131">Чехлы для мебели</category>
+      <category id="132">Мультиварки</category>
+      <category id="133">Одеяла</category>
+      <category id="134">Пижамы</category>
+      <category id="135">Термосы</category>
+      <category id="136">Блендеры</category>
+      <category id="137">Ночные сорочки</category>
+      <category id="138">Ремни</category>
+      <category id="139">Конструкторы</category>
+      <category id="140">Соки</category>
+      <category id="141">Роботы-пылесосы</category>
+      <category id="142">Спортивные игровые наборы</category>
+      <category id="143">Подставки для техники</category>
+      <category id="144">Куртки</category>
+      <category id="145">Мини-печи</category>
+      <category id="146">Отпариватели</category>
+      <category id="147">Наполнители для лотков и клеток</category>
+      <category id="148">Жидкие подводки</category>
+      <category id="149">Бальзамы</category>
+      <category id="150">помады</category>
+      <category id="151">Румяна</category>
+      <category id="152">Корректоры</category>
+      <category id="153">Тени</category>
+      <category id="154">Косметические карандаши</category>
+      <category id="155">Фитнес-браслеты</category>
+      <category id="156">Электромотоциклы</category>
+      <category id="157">Щипцы для укладки</category>
+      <category id="158">Простыни</category>
+      <category id="159">Антисептики кожные</category>
+      <category id="160">Посуда для микроволновой печи</category>
+      <category id="161">Кофеварки</category>
+      <category id="162">3D-ручки</category>
+      <category id="163">Фильтры для воды</category>
+      <category id="164">Камеры видеонаблюдения</category>
+      <category id="165">Ошейники</category>
+      <category id="166">Весы</category>
+      <category id="167">Фильтры для пылесосов</category>
+      <category id="168">Поисковые устройства</category>
+      <category id="169">Тостеры</category>
+      <category id="170">Микроволновые печи</category>
+      <category id="171">Фены</category>
+      <category id="172">Утюги</category>
+      <category id="173">Мешки для пылесосов</category>
+      <category id="174">Покрывала</category>
+      <category id="175">Термокружки</category>
+      <category id="176">Подушки</category>
+      <category id="177">Роботы-пылесосы</category>
+    </categories>
+    <shipment-options>
+      <option days="0" order-before="9"/>
+    </shipment-options>
+    <offers/>
+    <shipment-options>
+      <option days="0" order-before="9"/>
+    </shipment-options>
+  </shop>
+</yml_catalog>

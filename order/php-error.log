@@ -1,0 +1,6 @@
+[07-Aug-2020 15:47:51 Europe/Moscow] PHP Warning:  require_once(../../beru_config/config.php): failed to open stream: No such file or directory in /home/beru-service/public_html/order/accept.php on line 34
+[07-Aug-2020 15:47:51 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required '../../beru_config/config.php' (include_path='.:/usr/share/php') in /home/beru-service/public_html/order/accept.php on line 34
+[07-Aug-2020 15:48:50 Europe/Moscow] PHP Warning:  require_once(../../beru_config/config.php): failed to open stream: No such file or directory in /home/beru-service/public_html/order/accept.php on line 34
+[07-Aug-2020 15:48:50 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required '../../beru_config/config.php' (include_path='.:/usr/share/php') in /home/beru-service/public_html/order/accept.php on line 34
+[09-Aug-2020 16:19:18 Europe/Moscow] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname in /home/beru-service/public_html/src/Telegram.php on line 49
+[09-Aug-2020 16:19:18 Europe/Moscow] PHP Warning:  file_get_contents(https://api.avaks.org/proxy.txt): failed to open stream: php_network_getaddresses: getaddrinfo failed: No address associated with hostname in /home/beru-service/public_html/src/Telegram.php on line 49

@@ -45,7 +45,7 @@ class OrderMS
         $backendAPI = new BackendAPI();
         $filter = array(
             '_agent' => '782c484a-6749-11ea-0a80-03f900263ee6',
-            'deleted' => ['$exists' => false]
+            'applicable' => true
         );
         if ($states != false) {
             $filter['_state'] = $states;
@@ -74,7 +74,7 @@ class OrderMS
 
         $position = array(
             "quantity" => $item['count'],
-            "price" => $product->price * 100,
+            "price" => $item['price'] * 100,
             "discount" => 0,
             "vat" => 0,
             "assortment" =>
