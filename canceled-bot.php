@@ -39,6 +39,7 @@ if (sizeof($ordersBeruCanceled) > 0 && isset($ordersBeruRes['orders'])) {
     }
 
     if (sizeof($ordersCanceled) > 0) {
+        $ordersCanceled = array_slice($ordersCanceled, 0, 30);
         $res = $orders->setMultipleOrdersStatus($ordersCanceled, 'canceled');
         $message = 'ОШИБКА setMultipleOrdersStatus canceled';
         $continue = Custom::sendErrorTelegramBeru($res, $message, 'setMultipleOrdersStatusCanceled');

@@ -37,6 +37,7 @@ if (isset($ordersBeruRes['orders'])) {
     }
 
     if (sizeof($ordersShipped) > 0) {
+        $ordersShipped = array_slice($ordersShipped, 0, 30);
         $res = $orders->setMultipleOrdersStatus($ordersShipped, 'shipped');
         $message = 'ОШИБКА setMultipleOrdersStatus shipped';
         $continue = Custom::sendErrorTelegramBeru($res, $message, 'setMultipleOrdersStatusShipped');
