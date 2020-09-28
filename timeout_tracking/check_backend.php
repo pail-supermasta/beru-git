@@ -39,8 +39,7 @@ $http_code = $all['http_code'];
 $userData = array("username" => "***", "password" => "***");
 $query = json_encode($userData);
 
-
-if ($all['total_time'] > 4) {
+if ($all['total_time'] > 2) {
     require_once 'sql.php';
     $sql = "INSERT INTO logger_1 (id,http_code, url, total_time, created_at,`query`, response) 
             VALUES (DEFAULT,'" . $http_code . "', '" . $url . "', " . $all['total_time'] . ", DEFAULT, '" . $query . "', '" . $res . "')";
