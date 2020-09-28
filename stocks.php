@@ -19,7 +19,7 @@ ini_set("error_log", "php-error.log");
 
 require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
-$config = require_once 'config.php';
+$config = require_once 'config_multi.php';
 
 
 $jsonBeruPost = file_get_contents("php://input");
@@ -35,7 +35,8 @@ if (empty($jsonBeruPost)) {
 function validate($config, $beruAuth)
 {
 
-    if ($config['auth-token'] == $beruAuth) {
+    $key = array_search($beruAuth, array_column($config['shop'], 'auth-token'));
+    if (!is_bool($key)) {
         return true;
     } else {
         error_log("$beruAuth error");
