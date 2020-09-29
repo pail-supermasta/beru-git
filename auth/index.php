@@ -24,7 +24,7 @@ function validate($config, $beruAuth)
 
     $key = array_search($beruAuth, array_column($config['shop'], 'auth-token'));
     if (!is_bool($key)) {
-        return true;
+        return $config['shop'][$key]['orgInfo'];
     } else {
         error_log("$beruAuth error");
         http_response_code(403);
@@ -32,4 +32,4 @@ function validate($config, $beruAuth)
     }
 }
 
-validate($config, $beruAuth);
+var_export(validate($config, $beruAuth));

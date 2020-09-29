@@ -62,7 +62,7 @@ date_default_timezone_set('Europe/Moscow');
 
 require_once '../vendor/autoload.php';
 require_once '../src/Telegram.php';
-$config = require_once '../config.php';
+$config = require_once '../config_multi.php';
 
 use Avaks\MS\OrderMS;
 use Avaks\Custom\Custom;
@@ -82,7 +82,8 @@ function validate($config, $beruAuth)
 {
 
     //from post query
-    if ($config['auth-token'] == $beruAuth) {
+    $key = array_search($beruAuth, array_column($config['shop'], 'auth-token'));
+    if (!is_bool($key)) {
         return true;
     } else {
         error_log("$beruAuth error");

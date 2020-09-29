@@ -91,8 +91,13 @@ class OrderMS
         return $position;
     }
 
-    public function prepareOrder($orderDetails)
+    public function prepareOrder($orderDetails,$orgInfo)
     {
+        $organization = '52af56a1-78d1-11ea-0a80-03db00085f6d';
+        $contract = 'ff75e854-a182-11ea-0a80-020900039b7d';
+
+        if (isset($orgInfo['organization'])) $organization = $orgInfo['organization'];
+        if (isset($orgInfo['contract'])) $contract = $orgInfo['contract'];
 
         /*ждем оплаты*/
         $state = '327c0111-75c5-11e5-7a40-e89700139936';
@@ -115,14 +120,14 @@ class OrderMS
             "shared": true,
             "organization": {
                 "meta": {
-                    "href": "https://online.moysklad.ru/api/remap/1.1/entity/organization/52af56a1-78d1-11ea-0a80-03db00085f6d",
+                    "href": "https://online.moysklad.ru/api/remap/1.1/entity/organization/'.$organization.'",
                     "type": "organization",
                     "mediaType": "application/json"
                 }
             },
             "contract" : {
                 "meta" : {
-                  "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/ff75e854-a182-11ea-0a80-020900039b7d",
+                  "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/'.$contract.'",
                   "type" : "contract",
                   "mediaType" : "application/json"
                 }
