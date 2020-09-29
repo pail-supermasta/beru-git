@@ -209,4 +209,4 @@ if (isset($jsonBeruPost['skus']) && isset($jsonBeruPost['warehouseId'])) {
 }
 
 $end = microtime(TRUE);
-telegram("POST /stocks took " . round(($end - $start), 2) . " seconds.", '-427337827');
+//telegram("POST /stocks took " . round(($end - $start), 2) . " seconds.", '-427337827');

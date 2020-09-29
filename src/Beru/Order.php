@@ -29,26 +29,26 @@ class Order
         file_put_contents($path, $result);
     }
 
-    public function getOrder()
+    public function getOrder($orgInfo)
     {
-        $res = Curl::execute('orders/' . $this->id . '.json');
+        $res = Curl::execute('orders/' . $this->id . '.json',false,false,false,$orgInfo);
         return $res;
     }
 
-    public function getAll($data = false)
+    public function getAll($data = false,$orgInfo)
     {
         $variables = '';
         if ($data != false) {
             $variables = "$data";
         }
-        $res = Curl::execute("orders.json$variables");
+        $res = Curl::execute("orders.json$variables",false,false,false,$orgInfo);
         return $res;
     }
 
-    public function getSticker()
+    public function getSticker($orgInfo)
     {
         $query = 'orders/' . $this->id . '/delivery/labels.json';
-        $res = Curl::execute($query);
+        $res = Curl::execute($query,false,false,false,$orgInfo);
 
         // download
         $this->Download($res);
@@ -57,7 +57,7 @@ class Order
 
     }
 
-    public function setDelivery($orderBeru)
+    public function setDelivery($orderBeru,$orgInfo)
     {
 
         $this->id = $orderBeru['id'];
@@ -97,11 +97,11 @@ class Order
 
         //https://api.partner.market.yandex.ru/v2/campaigns/21621240/orders/17150036/delivery/shipments/4177/boxes
         $query = 'orders/' . $this->id . '/delivery/shipments/' . $this->shipments['id'] . '/boxes.json';
-        $res = Curl::execute($query, $postdata, 'put', true);
+        $res = Curl::execute($query, $postdata, 'put', true,$orgInfo);
         return $res;
     }
 
-    public function setStatus($status, $substatus)
+    public function setStatus($status, $substatus,$orgInfo)
     {
         $postdata = '{
           "order":
@@ -112,11 +112,11 @@ class Order
         }';
         //https://api.partner.market.yandex.ru/v2/campaigns/10003/orders/12345/status.json
         $query = 'orders/' . $this->id . '/status.json';
-        $res = Curl::execute($query, $postdata, 'put', true);
+        $res = Curl::execute($query, $postdata, 'put', true,$orgInfo);
         return $res;
     }
 
-    public function setMultipleOrdersStatus($orders, $type = false)
+    public function setMultipleOrdersStatus($orders, $type = false,$orgInfo)
     {
 
         if ($type != false && $type == 'canceled') {
@@ -140,7 +140,7 @@ class Order
         $ordersItems = json_encode($ordersItems);
         $postdata = '{"orders":' . $ordersItems . '}';
         $query = 'orders/status-update.json';
-        $res = Curl::execute($query, $postdata, 'post', true);
+        $res = Curl::execute($query, $postdata, 'post', true,$orgInfo);
         return $res;
     }
 }

@@ -21,12 +21,18 @@ class Curl
      */
 
 
-    public static function execute($link, $data = false, $type = false, $display = false)
+    public static function execute($link, $data = false, $type = false, $display = false, $orgInfo = false)
     {
+
+        $oauth_token = 'AgAAAAA-LlaIAAY9-pTT9l04e08ZtW-TMVb4nwc';//Маркет fallback
+        $oauth_client_id = '3e40dc89bdff413f81d5a8a8f23109a0';
+
+        if (isset($orgInfo['oauth_token'])) $oauth_token = $orgInfo['oauth_token'];
+        if (isset($orgInfo['oauth_client_id'])) $oauth_client_id = $orgInfo['oauth_client_id'];
 
         $headers = array(
             0 => "Content-Type: application/json",
-            1 => 'Authorization: OAuth oauth_token="AgAAAAA-LlaIAAY9-pTT9l04e08ZtW-TMVb4nwc", oauth_client_id="3e40dc89bdff413f81d5a8a8f23109a0"' //Маркет
+            1 => 'Authorization: OAuth oauth_token="'.$oauth_token.'", oauth_client_id="'.$oauth_client_id.'"'
         );
 
 

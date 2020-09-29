@@ -20,6 +20,7 @@ class OrderMS
     public $positions;
     public $state;
     public $humanState;
+    public $_organization;
 
     function __construct($id = null, $name = null, $positions = null)
     {
@@ -49,6 +50,10 @@ class OrderMS
         );
         if ($states != false) {
             $filter['_state'] = $states;
+        }
+
+        if ($this->_organization != false) {
+            $filter['_organization'] = $this->_organization;
         }
 
         if ($period != false) {
