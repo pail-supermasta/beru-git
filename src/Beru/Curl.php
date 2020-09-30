@@ -26,9 +26,11 @@ class Curl
 
         $oauth_token = 'AgAAAAA-LlaIAAY9-pTT9l04e08ZtW-TMVb4nwc';//Маркет fallback
         $oauth_client_id = '3e40dc89bdff413f81d5a8a8f23109a0';
+        $campaign = '21621240';
 
         if (isset($orgInfo['oauth_token'])) $oauth_token = $orgInfo['oauth_token'];
         if (isset($orgInfo['oauth_client_id'])) $oauth_client_id = $orgInfo['oauth_client_id'];
+        if (isset($orgInfo['campaign'])) $campaign = $orgInfo['campaign'];
 
         $headers = array(
             0 => "Content-Type: application/json",
@@ -41,7 +43,7 @@ class Curl
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
-        curl_setopt($curl, CURLOPT_URL, 'https://api.partner.market.yandex.ru/v2/campaigns/21621240/' . $link);
+        curl_setopt($curl, CURLOPT_URL, 'https://api.partner.market.yandex.ru/v2/campaigns/'.$campaign.'/' . $link);
 
 
         if ($type == 'put') {
