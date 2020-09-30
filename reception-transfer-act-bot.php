@@ -18,11 +18,14 @@ date_default_timezone_set('Europe/Moscow');
 
 use Avaks\Beru\Reception;
 
-$reception = new Reception();
-$reception->getAct();
-$receptionLink = 'https://beru-service.a3w.ru/files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
-$date = date('d-m-yy');
-
-telegram("Акт приема передачи отправлений BERU [$date]($receptionLink)", '-385044014', 'Markdown');
+foreach ($config['shop'] as $shop) {
 
 
+    $reception = new Reception();
+    $reception->getAct($shop['orgInfo'],$shop['name']);
+    $receptionLink = 'https://beru-service.a3w.ru/files/receptions/reception_transfer_act_'.$shop['name'].'_' . date('d-m-yy') . '.pdf';
+    $date = date('d-m-yy');
+
+    telegram("Акт приема передачи отправлений BERU ".$shop['name']." [$date]($receptionLink)", '-385044014', 'Markdown');
+
+}

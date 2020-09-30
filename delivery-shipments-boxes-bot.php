@@ -12,60 +12,66 @@ ini_set("error_log", "php-error.log");
 require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
 
-$config = require_once 'config.php';
+//$config = require_once 'config.php';
+$config = require_once 'config_multi.php';
+
 
 use Avaks\Beru\Order;
 use Avaks\MS\OrderMS;
 use Avaks\Custom\Custom;
 
+//ГОТОВО
 
-$orders = new Order();
-$ordersBeruRes = json_decode($orders->getAll('?status=PROCESSING&substatus=STARTED'), true);
+foreach ($config['shop'] as $shop) {
 
-$ordersMS = new OrderMS();
+    $orders = new Order();
+    $ordersBeruRes = json_decode($orders->getAll('?status=PROCESSING&substatus=STARTED',$shop['orgInfo']), true);
+
+    $ordersMS = new OrderMS();
 //В работе
-$state = 'ecf45f89-f518-11e6-7a69-9711000ff0c4';
-$ordersBeruReadyToShip = $ordersMS->getAllBeru($state);
+    $state = 'ecf45f89-f518-11e6-7a69-9711000ff0c4';
+    $ordersMS->_organization = $shop['orgInfo']['organization'] ?? false;
+    $ordersBeruReadyToShip = $ordersMS->getAllBeru($state);
 
-if (isset($ordersBeruRes['orders'])) {
-    foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
-        $key = array_search($orderBeruReadyToShip['name'], array_column($ordersBeruRes['orders'], 'id'));
-        if (!is_bool($key) && !isset($ordersBeruRes['orders'][$key]['cancelRequested'])) {
+    if (isset($ordersBeruRes['orders'])) {
+        foreach ($ordersBeruReadyToShip as $orderBeruReadyToShip) {
+            $key = array_search($orderBeruReadyToShip['name'], array_column($ordersBeruRes['orders'], 'id'));
+            if (!is_bool($key) && !isset($ordersBeruRes['orders'][$key]['cancelRequested'])) {
 
-            $ordersMS->name = $ordersBeruRes['orders'][$key]['id'];
-            $ordersMS->id = $orderBeruReadyToShip['id'];
+                $ordersMS->name = $ordersBeruRes['orders'][$key]['id'];
+                $ordersMS->id = $orderBeruReadyToShip['id'];
 
-            $res = $orders->setDelivery($ordersBeruRes['orders'][$key]);
-            //if errors continue to next order
-            $message = 'ОШИБКА setDelivery заказа ' . $ordersMS->name;
-            $continue = Custom::sendErrorTelegramBeru($res, $message, 'setDelivery');
-            if ($continue) continue;
+                $res = $orders->setDelivery($ordersBeruRes['orders'][$key],$shop['orgInfo']);
+                //if errors continue to next order
+                $message = 'ОШИБКА setDelivery заказа ' . $ordersMS->name;
+                $continue = Custom::sendErrorTelegramBeru($res, $message, 'setDelivery');
+                if ($continue) continue;
 
-            $res = $orders->getSticker();
-            //if errors continue to next order
-            $message = 'ОШИБКА getSticker заказа ' . $ordersMS->name;
-            $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
-            if ($continue) continue;
+                $res = $orders->getSticker($shop['orgInfo']);
+                //if errors continue to next order
+                $message = 'ОШИБКА getSticker заказа ' . $ordersMS->name;
+                $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
+                if ($continue) continue;
 
 
-            $res = $ordersMS->setToShip();
-            //if errors continue to next order
-            $message = 'ОШИБКА setToShip заказа ' . $ordersMS->name;
-            $continue = Custom::sendErrorTelegram($res, $message, 'setToShip', false, true);
-            if ($continue) {
-                continue;
-            } else {
+                $res = $ordersMS->setToShip();
+                //if errors continue to next order
+                $message = 'ОШИБКА setToShip заказа ' . $ordersMS->name;
+                $continue = Custom::sendErrorTelegram($res, $message, 'setToShip', false, true);
+                if ($continue) {
+                    continue;
+                } else {
 //            unlink('/home/beru-service/public_html/files/labels/' . $ordersBeruRes['orders'][$key] . '.pdf');
-            }
+                }
 
-            $res = $orders->setStatus('PROCESSING', 'READY_TO_SHIP');
-            //if errors continue to next order
-            $message = 'ОШИБКА setStatus READY_TO_SHIP заказа ' . $ordersMS->name;
-            $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
-            if ($continue) continue;
+                $res = $orders->setStatus('PROCESSING', 'READY_TO_SHIP',$shop['orgInfo']);
+                //if errors continue to next order
+                $message = 'ОШИБКА setStatus READY_TO_SHIP заказа ' . $ordersMS->name;
+                $continue = Custom::sendErrorTelegramBeru($res, $message, 'getSticker');
+                if ($continue) continue;
+            }
         }
     }
+
 }
-
-
 

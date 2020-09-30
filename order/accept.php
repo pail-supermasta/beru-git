@@ -31,7 +31,7 @@ date_default_timezone_set('Europe/Moscow');
 
 require_once '../vendor/autoload.php';
 require_once '../src/Telegram.php';
-$config = require_once '../config.php';
+$config = require_once '../config_multi.php';
 
 use Avaks\MS\OrderMS;
 use Avaks\MS\CurlMoiSklad;
@@ -52,8 +52,9 @@ function validate($config, $beruAuth)
 {
 
     //from post query
-    if ($config['auth-token'] == $beruAuth) {
-        return true;
+    $key = array_search($beruAuth, array_column($config['shop'], 'auth-token'));
+    if (!is_bool($key)) {
+        return $config['shop'][$key]['orgInfo'];
     } else {
         error_log("$beruAuth error");
         http_response_code(403);
@@ -61,7 +62,7 @@ function validate($config, $beruAuth)
     }
 }
 
-validate($config, $beruAuth);
+$orgInfo = validate($config, $beruAuth);
 
 $newOrder = new OrderMS();
 
@@ -104,7 +105,7 @@ foreach ($orderBeru['items'] as $item) {
 
 
 $orderDetails['positions'] = json_encode($positions);
-$preparedOrder = $newOrder->prepareOrder($orderDetails);
+$preparedOrder = $newOrder->prepareOrder($orderDetails,$orgInfo);
 $newOrderRes = CurlMoiSklad::curlMS('/entity/customerorder', $preparedOrder, 'post');
 
 $message = 'ОШИБКА создания заказа ' . $orderBeru['id'];

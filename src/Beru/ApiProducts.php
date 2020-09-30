@@ -13,13 +13,13 @@ use Avaks\Custom\Custom;
 
 class ApiProducts
 {
-    public function getAll()
+    public function getAll($orgInfo)
     {
-        $res = Curl::execute("offer-prices.json?limit=2000");
+        $res = Curl::execute("offer-prices.json?limit=2000",false,false,false,$orgInfo);
         return $res;
     }
 
-    public function updatePrice($newPrices)
+    public function updatePrice($newPrices,$orgInfo)
     {
 
 
@@ -35,7 +35,7 @@ class ApiProducts
             $offers[] = $offer;
         }
         $postdata['offers'] = $offers;
-        $res = Curl::execute("offer-prices/updates.json", json_encode($postdata), 'post');
+        $res = Curl::execute("offer-prices/updates.json", json_encode($postdata), 'post',false,$orgInfo);
         return $res;
     }
 

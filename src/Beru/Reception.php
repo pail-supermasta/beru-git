@@ -11,20 +11,20 @@ namespace Avaks\Beru;
 
 class Reception
 {
-    private function Download($result)
+    private function Download($result,$shopName)
     {
 //        $path = 'files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
-        $path = '/home/beru-service/public_html/files/receptions/reception_transfer_act_21621240_' . date('d-m-yy') . '.pdf';
+        $path = '/home/beru-service/public_html/files/receptions/reception_transfer_act_'.$shopName.'_' . date('d-m-yy') . '.pdf';
         file_put_contents($path, $result);
     }
 
-    public function getAct()
+    public function getAct($orgInfo,$shopName)
     {
         $query = '/shipments/reception-transfer-act.json';
-        $res = Curl::execute($query);
+        $res = Curl::execute($query,false,false,false,$orgInfo);
 
         // download
-        $this->Download($res);
+        $this->Download($res,$shopName);
         return $res;
 
 
