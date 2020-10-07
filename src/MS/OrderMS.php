@@ -100,14 +100,19 @@ class OrderMS
     {
         $organization = '52af56a1-78d1-11ea-0a80-03db00085f6d';
         $contract = 'ff75e854-a182-11ea-0a80-020900039b7d';
+        $logisticsProvider = '1 Не нужна доставка';
+        $address = 'Московская область, г. Подольск, мкр. Климовск, ул. Коммунальная, д. 17, с 11:00-20:00';
+        $addressComment = 'тел Диспетчер +7(495)739-21-15';
 
         if (isset($orgInfo['organization'])) $organization = $orgInfo['organization'];
         if (isset($orgInfo['contract'])) $contract = $orgInfo['contract'];
+        if (isset($orgInfo['logisticsProvider'])) $logisticsProvider = $orgInfo['logisticsProvider'];
+        if (isset($orgInfo['address'])) $address = $orgInfo['address'];
+        if (isset($orgInfo['addressComment'])) $addressComment = $orgInfo['addressComment'];
 
         /*ждем оплаты*/
         $state = '327c0111-75c5-11e5-7a40-e89700139936';
-        $logisticsProvider = '1 Не нужна доставка';
-        $addressComment = 'тел Диспетчер +7(495)739-21-15';
+
 
         $postdata = '{
             "name": "' . $orderDetails['order'] . '",
@@ -166,7 +171,7 @@ class OrderMS
                 },
                 {
                     "id": "547ff930-ef8e-11e6-7a31-d0fd0021d13e",
-                    "value": "Московская область, г. Подольск, мкр. Климовск, ул. Коммунальная, д. 17, с 11:00-20:00"
+                    "value": "' . $address . '"
                 },
                 {
                     "id": "547ffa0e-ef8e-11e6-7a31-d0fd0021d13f",
