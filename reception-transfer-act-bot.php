@@ -12,7 +12,9 @@ ini_set("error_log", "php-error.log");
 require_once 'vendor/autoload.php';
 require_once 'src/Telegram.php';
 
-$config = require_once 'config.php';
+//$config = require_once 'config.php';
+$config = require_once 'config_multi.php';
+
 
 date_default_timezone_set('Europe/Moscow');
 
