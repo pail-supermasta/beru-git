@@ -49,7 +49,7 @@ function getDSH($inputFileName)
     try {
 
 
-        $sheet = $spreadsheet->getSheetByName('Размещение товаров на Беру');;
+        $sheet = $spreadsheet->getSheetByName('Размещение товаров на витрине');;
         $maxCell = $sheet->getHighestDataRow("A");
         $data = $sheet->rangeToArray('A2:Q' . $maxCell);
 
