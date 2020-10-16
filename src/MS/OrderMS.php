@@ -98,13 +98,17 @@ class OrderMS
 
     public function prepareOrder($orderDetails,$orgInfo)
     {
-        $organization = '52af56a1-78d1-11ea-0a80-03db00085f6d';
+        $organization = '52af56a1-78d1-11ea-0a80-03db00085f6d'; // ИПМ
+        $organizationAccount = 'd5e343f9-0239-11eb-0a80-00d10026b682'; //ИПМ "Яндекс.Беру"
+        $agentAccount = 'dd1b3edb-0238-11eb-0a80-02da00262233'; //ИПМ "Яндекс.Беру"
         $contract = 'ff75e854-a182-11ea-0a80-020900039b7d';
         $logisticsProvider = '1 Не нужна доставка';
         $address = 'Московская область, г. Подольск, мкр. Климовск, ул. Коммунальная, д. 17, с 11:00-20:00';
         $addressComment = 'тел Диспетчер +7(495)739-21-15';
 
         if (isset($orgInfo['organization'])) $organization = $orgInfo['organization'];
+        if (isset($orgInfo['organizationAccount'])) $organizationAccount = $orgInfo['organizationAccount'];
+        if (isset($orgInfo['agentAccount'])) $agentAccount = $orgInfo['agentAccount'];
         if (isset($orgInfo['contract'])) $contract = $orgInfo['contract'];
         if (isset($orgInfo['logisticsProvider'])) $logisticsProvider = $orgInfo['logisticsProvider'];
         if (isset($orgInfo['address'])) $address = $orgInfo['address'];
@@ -135,6 +139,14 @@ class OrderMS
                     "mediaType": "application/json"
                 }
             },
+            "organizationAccount":
+                "meta":
+                    {
+                        "href":"https://online.moysklad.ru/api/remap/1.1/entity/organization/'.$organization.'/accounts/'.$organizationAccount.'",
+                        "type":"account",
+                        "mediaType":"application/json"
+                    }
+            },
             "contract" : {
                 "meta" : {
                   "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/'.$contract.'",
@@ -147,6 +159,13 @@ class OrderMS
                     "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/782c484a-6749-11ea-0a80-03f900263ee6",
                     "type": "counterparty",
                     "mediaType": "application/json"
+                }
+            },
+            "agentAccount":{
+                "meta":{
+                    "href":"https://online.moysklad.ru/api/remap/1.1/entity/counterparty/782c484a-6749-11ea-0a80-03f900263ee6/accounts/'.$agentAccount.'",
+                    "type":"account",
+                    "mediaType":"application/json"
                 }
             },	
             "state": {
