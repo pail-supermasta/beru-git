@@ -134,7 +134,7 @@ if (isset($getOrderRes['id'])) {
         $message = 'ОШИБКА обновления статуса CANCELLED заказа ' . $orderBeru['id'];
         Custom::sendErrorTelegram($resSetCanceled, $message, 'status', true);
     } else {
-        http_response_code(400);
+        http_response_code(200);
         echo 'Статус не распознан.';
         die();
     }
@@ -148,7 +148,7 @@ if (isset($getOrderRes['id'])) {
     echo 'Статус обновлен.';
     die();
 } else {
-    http_response_code(400);
+    http_response_code(200);
     echo 'Заказ не найден.';
     die();
 }

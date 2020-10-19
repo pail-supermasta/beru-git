@@ -139,14 +139,17 @@ class OrderMS
                     "mediaType": "application/json"
                 }
             },
-            "organizationAccount":
-                "meta":
+            "organizationAccount":  {
+            
+            "meta":
                     {
                         "href":"https://online.moysklad.ru/api/remap/1.1/entity/organization/'.$organization.'/accounts/'.$organizationAccount.'",
                         "type":"account",
                         "mediaType":"application/json"
                     }
             },
+                
+            
             "contract" : {
                 "meta" : {
                   "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/'.$contract.'",

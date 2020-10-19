@@ -19,8 +19,8 @@ return array(
         ],
         ['name' => 'Target','auth-token' => '810000018074D4A0',
             'orgInfo'=>[
-                'organization'=>'326d65ca-75c5-11e5-7a40-e8970013991b', //НЗ
-                'organizationAccount'=>'b87ed0e2-023a-11eb-0a80-048c0026a719',
+                'organization'=>'5108772c-d0d5-11ea-0a80-006d000c0339', //ИПШ
+                'organizationAccount'=>'a4ea9a38-ff14-11ea-0a80-044c0006331e',
                 'agentAccount'=>'dd1b406e-0238-11eb-0a80-02da00262234', //НЗ "Яндекс.Беру"
                 'contract'=>'cf4b1d1b-d329-11ea-0a80-02ea00182bea',
                 'oauth_token'=>'AgAAAABDkSp0AAafpDD5Y0ZZUkZTlaVv-OYsHNE',
