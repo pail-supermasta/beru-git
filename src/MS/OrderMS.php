@@ -75,11 +75,11 @@ class OrderMS
         //product
         $product = new Product();
         $product->findByID_BERU($item['offerId']);
-
+        $subsidy = $item['subsidy'] ?? 0;
 
         $position = array(
             "quantity" => $item['count'],
-            "price" => $item['price'] * 100,
+            "price" => $item['price'] * 100 + $subsidy * 100,
             "discount" => 0,
             "vat" => 0,
             "assortment" =>
@@ -96,7 +96,7 @@ class OrderMS
         return $position;
     }
 
-    public function prepareOrder($orderDetails,$orgInfo)
+    public function prepareOrder($orderDetails, $orgInfo)
     {
         $organization = '52af56a1-78d1-11ea-0a80-03db00085f6d'; // ИПМ
         $organizationAccount = 'd5e343f9-0239-11eb-0a80-00d10026b682'; //ИПМ "Яндекс.Беру"
@@ -134,7 +134,7 @@ class OrderMS
             "shared": true,
             "organization": {
                 "meta": {
-                    "href": "https://online.moysklad.ru/api/remap/1.1/entity/organization/'.$organization.'",
+                    "href": "https://online.moysklad.ru/api/remap/1.1/entity/organization/' . $organization . '",
                     "type": "organization",
                     "mediaType": "application/json"
                 }
@@ -143,7 +143,7 @@ class OrderMS
             
             "meta":
                     {
-                        "href":"https://online.moysklad.ru/api/remap/1.1/entity/organization/'.$organization.'/accounts/'.$organizationAccount.'",
+                        "href":"https://online.moysklad.ru/api/remap/1.1/entity/organization/' . $organization . '/accounts/' . $organizationAccount . '",
                         "type":"account",
                         "mediaType":"application/json"
                     }
@@ -152,7 +152,7 @@ class OrderMS
             
             "contract" : {
                 "meta" : {
-                  "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/'.$contract.'",
+                  "href" : "https://online.moysklad.ru/api/remap/1.1/entity/contract/' . $contract . '",
                   "type" : "contract",
                   "mediaType" : "application/json"
                 }
@@ -166,7 +166,7 @@ class OrderMS
             },
             "agentAccount":{
                 "meta":{
-                    "href":"https://online.moysklad.ru/api/remap/1.1/entity/counterparty/782c484a-6749-11ea-0a80-03f900263ee6/accounts/'.$agentAccount.'",
+                    "href":"https://online.moysklad.ru/api/remap/1.1/entity/counterparty/782c484a-6749-11ea-0a80-03f900263ee6/accounts/' . $agentAccount . '",
                     "type":"account",
                     "mediaType":"application/json"
                 }
@@ -306,9 +306,9 @@ class OrderMS
         $attribute['id'] = '535dd809-1db1-11ea-0a80-04c00009d6bf';
         $attribute['value'] = $DSHSumNum;
         $put_data['attributes'][] = $attribute;
-        $put_data['description'] = $oldDescription .' '.$DSHSumComment;
+        $put_data['description'] = $oldDescription . ' ' . $DSHSumComment;
 
-        $postdata = json_encode($put_data,JSON_UNESCAPED_UNICODE);
+        $postdata = json_encode($put_data, JSON_UNESCAPED_UNICODE);
 
         $res = '';
         $res = CurlMoiSklad::curlMS('/entity/customerorder/' . $this->id, $postdata, 'put');
