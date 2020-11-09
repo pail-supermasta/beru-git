@@ -12,9 +12,9 @@ return array(
                 'oauth_token'=>'AgAAAAA-LlaIAAY9-pTT9l04e08ZtW-TMVb4nwc',
                 'oauth_client_id'=>'3e40dc89bdff413f81d5a8a8f23109a0',
                 'campaign'=>'21621240',
-                'logisticsProvider'=>'1 Не нужна доставка',
-                'address'=>'Московская область, г. Подольск, мкр. Климовск, ул. Коммунальная, д. 17, с 11:00-20:00',
-                'addressComment'=>'тел Диспетчер +7(495)739-21-15'
+                'logisticsProvider'=>'0 Нужна доставка',
+                'address'=>'2-я Мелитопольская, 10А, 13, Бутово, Москва, 117623',
+                'addressComment'=>'разгрузка до 19:30, Александр Геннадьевич Любутин +79197221234'
             ]
         ],
         ['name' => 'Target','auth-token' => '810000018074D4A0',
