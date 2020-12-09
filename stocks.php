@@ -133,7 +133,8 @@ function getQuantity($urlProduct, $token)
 
 
 
-$token = getToken($urlLogin, $userData);
+//$token = getToken($urlLogin, $userData);
+$token = 'bW9uZ29kYkDRgtC10YXRgtGA0Y3QvdC0OiEhQHRoOTI0N3Q5MjQ=';
 
 $data['filter'] = json_encode(array('attributes.id' => '032490b9-6d8f-11ea-0a80-027100264b27'));
 

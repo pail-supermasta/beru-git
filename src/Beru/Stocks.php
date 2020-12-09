@@ -71,33 +71,4 @@ class Stocks
 
         return $stockMS;
     }
-
-    public function aggePrBundl()
-    {
-        $collection = (new MSSync())->MSSync;
-        $project = ['$project' =>
-            ['_id' => true]
-        ];
-        $unionWith = ['$unionWith' =>
-            [
-                'coll' => "bundle",
-                'pipeline' => [
-                    ['$project' =>
-                        ['_id' => true]
-                    ]
-                ]
-
-            ]
-        ];
-        $ops = [$project, $unionWith];
-        $stockCursor = $collection->product->aggregate($ops);
-        foreach ($stockCursor as $product) {
-            var_export($product->_id);
-            die();
-        }
-    }
 }
-
-require_once '../../vendor/autoload.php';
-$aggr = new Stocks();
-$aggr->aggePrBundl();
