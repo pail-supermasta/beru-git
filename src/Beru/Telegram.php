@@ -46,7 +46,7 @@ class Telegram
 
         $ch = curl_init("https://api.telegram.org/bot".$this->bot_key."/".$apiendpoint);
 
-        $proxy = file_get_contents('https://api.avaks.org/proxy.txt');
+//        $proxy = file_get_contents('https://api.avaks.org/proxy.txt');
 
         curl_setopt_array($ch, array(
             CURLOPT_HTTPPROXYTUNNEL => true,
