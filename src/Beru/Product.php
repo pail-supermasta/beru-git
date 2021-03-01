@@ -37,7 +37,10 @@ class Product
     public function findWithID_BERU()
     {
         $backendAPI = new BackendAPI();
-        $data['filter'] = json_encode(array('attributes.id' => '032490b9-6d8f-11ea-0a80-027100264b27'));
+        $data['filter'] = json_encode(array(
+            'attributes.id' => '032490b9-6d8f-11ea-0a80-027100264b27',
+            'archived' => false
+        ));
         $data['limit'] = 9999;
         $data['offset'] = 0;
         $data['project'] = json_encode(array(

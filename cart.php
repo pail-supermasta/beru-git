@@ -63,62 +63,7 @@ validate($config, $beruAuth);
 $stocks = new Stocks();
 $product = new Product();
 
-/*$jsonBeruPost = '{
-    "cart": {
-        "currency": "RUR",
-        "items": [
-            {
-                "feedId": 737072,
-                "offerId": "PROF",
-                "offerName": "Набор пластика UNID для 3D ручки UNID PRO-F (по 10м. 3 цвета свеиящихся в темноте, в коробке)",
-                "subsidy": 0,
-                "count": 5,
-                "params": "Вес: 0.08 кг",
-                "fulfilmentShopId": 618886,
-                "sku": "100929014846",
-                "shopSku": "PROF"
-            },
-            {
-                "feedId": 737072,
-                "offerId": "305003",
-                "offerName": "Утюг Morphy Richards 305003 голубой",
-                "subsidy": 0,
-                "count": 55,
-                "params": "Цвет товара: голубой",
-                "fulfilmentShopId": 618886,
-                "sku": "100825129814",
-                "shopSku": "305003"
-            }
-        ],
-        "delivery": {
-            "region": {
-                "id": 39,
-                "name": "Ростов-на-Дону",
-                "type": "CITY",
-                "parent": {
-                    "id": 121146,
-                    "name": "Городской округ Ростов-на-Дону",
-                    "type": "SUBJECT_FEDERATION_DISTRICT",
-                    "parent": {
-                        "id": 11029,
-                        "name": "Ростовская область",
-                        "type": "SUBJECT_FEDERATION",
-                        "parent": {
-                            "id": 26,
-                            "name": "Южный федеральный округ",
-                            "type": "COUNTRY_DISTRICT",
-                            "parent": {
-                                "id": 225,
-                                "name": "Россия",
-                                "type": "COUNTRY"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}';*/
+
 
 $cart = json_decode($jsonBeruPost, true);
 $cartItems = $cart['cart']['items'];

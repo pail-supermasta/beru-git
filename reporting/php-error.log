@@ -86,3 +86,6 @@ Stack trace:
 #0 C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php(28): getDSH('marketplace_ser...')
 #1 {main}
   thrown in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 53
+[10-Feb-2021 14:27:30 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126
+[10-Feb-2021 15:04:57 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126
+[10-Feb-2021 15:10:02 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126

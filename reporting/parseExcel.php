@@ -49,7 +49,7 @@ function getDSH($inputFileName)
     try {
 
 
-        $sheet = $spreadsheet->getSheetByName('Размещение товаров на витрине');;
+        $sheet = $spreadsheet->getSheetByName('Размещение товаров на витрине');
         $maxCell = $sheet->getHighestDataRow("A");
         $data = $sheet->rangeToArray('A2:Q' . $maxCell);
 
@@ -119,7 +119,7 @@ function setDSH($orders)
     foreach ($orders as $orderName => $orderDSHs) {
 
         $orderMS->name = $orderName;
-        $orderMS->id=null;
+        $orderMS->id = null;
         $orderDetails = $orderMS->getByName();
         $orderMS->id = $orderDetails['id'];
         if(!isset($orderDetails['description'])){
@@ -136,7 +136,6 @@ function setDSH($orders)
 
         if (strpos($result, 'обработка-ошибок') > 0 || $result == '' || $result == false) {
             var_dump($orderMS, $result, "ERROR!!!1");
-            die();
         }
     }
     return true;
