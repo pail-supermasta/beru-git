@@ -100,6 +100,64 @@ function getDSH($inputFileName)
 
 
         }
+
+
+        $sheet = $spreadsheet->getSheetByName('Участие в программе лояльности');
+        $maxCell = $sheet->getHighestDataRow("A");
+        $data = $sheet->rangeToArray('A2:K' . $maxCell);
+
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+
+                if (!isset($orders[$orderData[0]])) {
+                    $orders[$orderData[0]] = ['Участие в программе лояльности' => (float)$orderData[10]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Участие в программе лояльности'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Участие в программе лояльности' => (float)$orderData[10]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Участие в программе лояльности'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Участие в программе лояльности'] + (float)$orderData[10];
+                    $orders[$orderData[0]]['Участие в программе лояльности'] = $plusDshSum;
+                }
+
+                if (!isset($orders[$orderData[0]]['dshSum'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Участие в программе лояльности']];
+                } else {
+                    $orders[$orderData[0]]['dshSum'] += $orders[$orderData[0]]['Участие в программе лояльности'];
+                }
+
+
+            }
+
+
+        }
+
+
+        $sheet = $spreadsheet->getSheetByName('Доставка покупателям');
+        $maxCell = $sheet->getHighestDataRow("A");
+        $data = $sheet->rangeToArray('A2:N' . $maxCell);
+
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+
+                if (!isset($orders[$orderData[0]])) {
+                    $orders[$orderData[0]] = ['Доставка покупателям' => (float)$orderData[13]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Доставка покупателям'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Доставка покупателям' => (float)$orderData[13]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Доставка покупателям'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Доставка покупателям'] + (float)$orderData[13];
+                    $orders[$orderData[0]]['Доставка покупателям'] = $plusDshSum;
+                }
+
+                if (!isset($orders[$orderData[0]]['dshSum'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Доставка покупателям']];
+                } else {
+                    $orders[$orderData[0]]['dshSum'] += $orders[$orderData[0]]['Доставка покупателям'];
+                }
+
+
+            }
+
+
+        }
         return $orders;
 
     } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {

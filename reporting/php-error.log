@@ -89,3 +89,8 @@ Stack trace:
 [10-Feb-2021 14:27:30 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126
 [10-Feb-2021 15:04:57 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126
 [10-Feb-2021 15:10:02 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 126
+[01-Mar-2021 13:06:40 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[01-Mar-2021 13:06:40 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[01-Mar-2021 13:06:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[01-Mar-2021 13:06:40 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[01-Mar-2021 13:06:41 UTC] PHP Warning:  rename(files/new/РґР»СЏ РїСЂРёРјРµСЂР° ces_21621240_01-11-2020_10-01-2021.xlsx,files/old/РґР»СЏ РїСЂРёРјРµСЂР° ces_21621240_01-11-2020_10-01-2021.xlsx): Отказано в доступе. (code: 5) in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 32
