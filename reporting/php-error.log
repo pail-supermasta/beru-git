@@ -94,3 +94,405 @@ Stack trace:
 [01-Mar-2021 13:06:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
 [01-Mar-2021 13:06:40 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
 [01-Mar-2021 13:06:41 UTC] PHP Warning:  rename(files/new/для примера ces_21621240_01-11-2020_10-01-2021.xlsx,files/old/для примера ces_21621240_01-11-2020_10-01-2021.xlsx): �������� � �������. (code: 5) in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 32
+[06-Apr-2021 13:32:06 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[06-Apr-2021 13:32:31 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 07:10:44 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 07:15:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[04-Jun-2021 07:15:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 07:15:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 07:15:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[04-Jun-2021 08:21:05 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[04-Jun-2021 08:21:05 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 08:21:05 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[04-Jun-2021 08:21:05 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:42:54 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:42:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:54 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:42:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:48:19 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:48:19 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:19 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:19 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:48:21 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:48:21 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:21 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:21 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:48:22 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:48:22 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:22 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:48:22 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:53:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:53:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:53:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:08 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:08 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:08 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:08 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:19 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:19 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:19 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:19 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:33 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:33 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:33 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:33 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:38 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:38 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:38 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:38 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:54 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:54 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:54:55 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:54:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:55 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:54:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:07 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:07 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:07 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:07 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:09 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:13 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:13 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:13 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:13 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:14 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:14 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:14 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:14 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 06:55:17 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 06:55:17 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:17 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 06:55:17 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:06:33 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:45 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:45 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:45 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:45 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:47 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:47 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[09-Aug-2021 07:08:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[09-Aug-2021 07:08:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 184
+[09-Aug-2021 07:08:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 192
+[10-Aug-2021 12:55:55 UTC] PHP Warning:  file_get_contents(files/new/~$Орион_marketplace_services_21991413_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\OLERead.php on line 106
+[10-Aug-2021 12:55:55 UTC] PHP Warning:  fopen(files/new/~$Орион_marketplace_services_21991413_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 155
+[10-Aug-2021 12:59:59 UTC] PHP Warning:  file_get_contents(files/new/~$Орион_marketplace_services_21991413_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\OLERead.php on line 106
+[10-Aug-2021 12:59:59 UTC] PHP Warning:  fopen(files/new/~$Орион_marketplace_services_21991413_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 155
+[10-Aug-2021 13:12:04 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:12:04 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:04 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:04 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:12:05 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:12:05 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:05 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:05 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:12:06 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:12:06 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:06 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:12:06 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:17:49 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:17:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:49 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:17:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:17:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:17:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:17:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:17:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:22:15 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:22:15 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:15 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:15 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:22:16 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:22:16 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:16 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:16 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:22:25 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:22:25 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:25 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:25 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:22:42 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:22:42 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:42 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:42 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:22:50 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:22:50 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:50 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:22:50 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:04 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:04 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:04 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:04 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:10 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:10 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:10 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:10 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:25 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:25 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:25 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:25 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:27 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:29 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:41 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:41 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:41 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:41 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:47 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:47 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:48 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:23:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:23:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:23:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:40 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:40 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:40 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:40 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:42 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:42 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:42 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:42 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:44 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:46 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:46 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:46 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:46 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 13:32:47 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 180
+[10-Aug-2021 13:32:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:47 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 182
+[10-Aug-2021 13:32:47 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 190
+[10-Aug-2021 14:09:52 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:52 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:09:53 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:53 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:09:54 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:54 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:09:55 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:55 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:09:55 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:56 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:09:56 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:09:56 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 205
+[10-Aug-2021 14:15:44 UTC] PHP Notice:  Undefined index: Экспресс заказы in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 204
+[10-Aug-2021 14:22:48 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:48 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:48 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:52 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:53 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:53 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:53 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:55 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:55 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:22:56 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:22:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:56 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:22:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:26:43 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:26:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:26:43 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:26:43 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:26:43 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:26:43 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 208
+[10-Aug-2021 14:29:41 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 194
+[10-Aug-2021 14:29:41 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:29:41 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 196
+[10-Aug-2021 14:29:41 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:29:41 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[10-Aug-2021 14:29:41 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 208
+[10-Aug-2021 14:35:10 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 195
+[10-Aug-2021 14:35:10 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:35:10 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:35:10 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 208
+[10-Aug-2021 14:35:10 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 208
+[10-Aug-2021 14:35:10 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 209
+[10-Aug-2021 14:39:46 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:39:47 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:44:33 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:44:33 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:44:33 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:44:34 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:44:34 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:44:34 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:44:35 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:44:35 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:45:34 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:45:35 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:45:35 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:45:36 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:45:36 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:45:36 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:49:47 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:49:47 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:49:48 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:49:48 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:49:49 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:49:49 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:49:50 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:49:50 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 211
+[10-Aug-2021 14:49:50 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:50:09 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:50:11 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:50:12 UTC] PHP Notice:  Undefined index: dshSum in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 210
+[10-Aug-2021 14:50:49 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:49 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:49 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:50 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:50 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:50 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:50 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:51 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:51 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:51 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:54 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:55 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:56 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:56 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:56 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[10-Aug-2021 14:50:57 UTC] PHP Warning:  Illegal string offset 'id' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 197
+[10-Aug-2021 14:50:57 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:57 UTC] PHP Warning:  Cannot assign an empty string to a string offset in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 199
+[10-Aug-2021 14:50:57 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 213
+[11-Aug-2021 08:57:48 UTC] PHP Warning:  file_get_contents(files/new/~$Авакс_marketplace_services_21990966_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\OLERead.php on line 106
+[11-Aug-2021 08:57:48 UTC] PHP Warning:  fopen(files/new/~$Авакс_marketplace_services_21990966_15_06_2021_05_08_2021.xlsx): failed to open stream: Resource temporarily unavailable in C:\Users\User\Documents\beru-git\beru-git\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 155
+[11-Aug-2021 09:20:54 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 198

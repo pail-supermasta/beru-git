@@ -51,17 +51,16 @@ function getDSH($inputFileName)
 
         $sheet = $spreadsheet->getSheetByName('Размещение товаров на витрине');
         $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:Q' . $maxCell);
+        $data = $sheet->rangeToArray('A2:R' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
 
             foreach ($data as $orderData) {
 
-
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => (float)$orderData[16]];
+                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => (float)$orderData[17]];
                 } else {
-                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на Беру'] + (float)$orderData[16];
+                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на Беру'] + (float)$orderData[17];
                     $orders[$orderData[0]] = ['Размещение товаров на Беру' => $plusDshSum];
 
                 }
@@ -133,17 +132,17 @@ function getDSH($inputFileName)
 
         $sheet = $spreadsheet->getSheetByName('Доставка покупателям');
         $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:N' . $maxCell);
+        $data = $sheet->rangeToArray('A2:R' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
             foreach ($data as $orderData) {
 
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Доставка покупателям' => (float)$orderData[13]];
+                    $orders[$orderData[0]] = ['Доставка покупателям' => (float)$orderData[17]];
                 } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Доставка покупателям'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Доставка покупателям' => (float)$orderData[13]];
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Доставка покупателям' => (float)$orderData[17]];
                 } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Доставка покупателям'])) {
-                    $plusDshSum = $orders[$orderData[0]]['Доставка покупателям'] + (float)$orderData[13];
+                    $plusDshSum = $orders[$orderData[0]]['Доставка покупателям'] + (float)$orderData[17];
                     $orders[$orderData[0]]['Доставка покупателям'] = $plusDshSum;
                 }
 
@@ -157,6 +156,20 @@ function getDSH($inputFileName)
             }
 
 
+        }
+
+        $sheet = $spreadsheet->getSheetByName('Экспресс заказы');
+        $maxCell = $sheet->getHighestDataRow("A");
+        $data = $sheet->rangeToArray('A2:F' . $maxCell);
+
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+                if (!isset($orders[$orderData[0]])) {
+                    $orders[$orderData[0]] = ['Экспресс заказы' => (float)$orderData[5]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Экспресс заказы'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Экспресс заказы' => (float)$orderData[5]];
+                }
+            }
         }
         return $orders;
 
@@ -178,7 +191,8 @@ function setDSH($orders)
 
         $orderMS->name = $orderName;
         $orderMS->id = null;
-        $orderDetails = $orderMS->getByName();
+//        $orderDetails = $orderMS->getByName();
+        $orderDetails = $orderMS->getByExternalCode();
         $orderMS->id = $orderDetails['id'];
         if(!isset($orderDetails['description'])){
             $orderDetails['description'] = '';
@@ -189,8 +203,14 @@ function setDSH($orders)
 
 //        $DSHSumComment = "\n$razmeshComment $agentComment";
 
-        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], '');
-        var_dump($orderName, $orderDSHs['dshSum']);
+        if(!isset($orderDSHs['Экспресс заказы']) || $orderDSHs['Экспресс заказы']<=0){
+            $orderDSHs['Экспресс заказы'] = 0;
+        }
+        if(!isset($orderDSHs['dshSum']) || $orderDSHs['dshSum']<=0){
+            $orderDSHs['dshSum'] = 0;
+        }
+        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], '',$orderDSHs['Экспресс заказы']);
+        var_dump($orderName);
 
         if (strpos($result, 'обработка-ошибок') > 0 || $result == '' || $result == false) {
             var_dump($orderMS, $result, "ERROR!!!1");

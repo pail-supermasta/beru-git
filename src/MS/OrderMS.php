@@ -41,6 +41,12 @@ class OrderMS
         return isset((json_decode($res, true))['rows'][0]) ? (json_decode($res, true))['rows'][0] : $res;
     }
 
+    public function getByExternalCode()
+    {
+        $res = CurlMoiSklad::curlMS('/entity/customerorder/?filter=externalCode=' . $this->name);
+        return isset((json_decode($res, true))['rows'][0]) ? (json_decode($res, true))['rows'][0] : $res;
+    }
+
     public function getAllBeru($states = false, $period = false)
     {
         $backendAPI = new BackendAPI();
@@ -289,7 +295,7 @@ class OrderMS
 
     }
 
-    public function setDSHSum($oldDescription, $DSHSumNum, $DSHSumComment)
+    public function setDSHSum($oldDescription, $DSHSumNum, $DSHSumComment, $ExpressOrderSum)
     {
 
 
@@ -303,10 +309,21 @@ class OrderMS
         $put_data = array();
         $attribute = array();
 
-        $attribute['id'] = '535dd809-1db1-11ea-0a80-04c00009d6bf';
-        $attribute['value'] = $DSHSumNum;
-        $put_data['attributes'][] = $attribute;
+        if($DSHSumNum>0) {
+            $attribute['id'] = '535dd809-1db1-11ea-0a80-04c00009d6bf';
+            $attribute['value'] = $DSHSumNum;
+            $put_data['attributes'][] = $attribute;
+        }
+
         $put_data['description'] = $oldDescription . ' ' . $DSHSumComment;
+
+        if($ExpressOrderSum>0){
+            var_dump("EXPRESSO");
+            $attribute['id'] = '8a500531-10fc-11ea-0a80-0533000590c7';
+            $attribute['value'] = $ExpressOrderSum;
+            $put_data['attributes'][] = $attribute;
+        }
+
 
         $postdata = json_encode($put_data, JSON_UNESCAPED_UNICODE);
 
