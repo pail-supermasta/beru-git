@@ -49,65 +49,54 @@ function getDSH($inputFileName)
     try {
 
 
+        //where orderData array index starts from 0
         $sheet = $spreadsheet->getSheetByName('Размещение товаров на витрине');
-        $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:R' . $maxCell);
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:Y' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
 
             foreach ($data as $orderData) {
 
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => (float)$orderData[17]];
+                    $orders[$orderData[0]] = ['Размещение товаров на витрине' => (float)$orderData[17]];
                 } else {
-                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на Беру'] + (float)$orderData[17];
-                    $orders[$orderData[0]] = ['Размещение товаров на Беру' => $plusDshSum];
-
+                    $plusDshSum = $orders[$orderData[0]]['Размещение товаров на витрине'] + (float)$orderData[17];
+                    $orders[$orderData[0]] = ['Размещение товаров на витрине' => $plusDshSum];
                 }
 
-                $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Размещение товаров на Беру']];
             }
+            $orders["ordersQty"] = sizeof($data);
 
         }
 
 
-        $sheet = $spreadsheet->getSheetByName('Агентское вознаграждение');
-        $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:E' . $maxCell);
+        $sheet = $spreadsheet->getSheetByName('Складская обработка');
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:Y' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
             foreach ($data as $orderData) {
 
-
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Агентское вознаграждение' => (float)$orderData[4]];
-                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Агентское вознаграждение'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Агентское вознаграждение' => (float)$orderData[4]];
-                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Агентское вознаграждение'])) {
-                    $plusDshSum = $orders[$orderData[0]]['Агентское вознаграждение'] + (float)$orderData[4];
-                    $orders[$orderData[0]]['Агентское вознаграждение'] = $plusDshSum;
+                    $orders[$orderData[0]] = ['Складская обработка' => (float)$orderData[17]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Складская обработка'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Складская обработка' => (float)$orderData[17]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Складская обработка'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Складская обработка'] + (float)$orderData[17];
+                    $orders[$orderData[0]]['Складская обработка'] = $plusDshSum;
                 }
-
-                if (!isset($orders[$orderData[0]]['dshSum'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Агентское вознаграждение']];
-                } else {
-                    $orders[$orderData[0]]['dshSum'] += $orders[$orderData[0]]['Агентское вознаграждение'];
-                }
-
 
             }
-
-
         }
 
 
         $sheet = $spreadsheet->getSheetByName('Участие в программе лояльности');
-        $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:K' . $maxCell);
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:R' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
             foreach ($data as $orderData) {
-
                 if (!isset($orders[$orderData[0]])) {
                     $orders[$orderData[0]] = ['Участие в программе лояльности' => (float)$orderData[10]];
                 } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Участие в программе лояльности'])) {
@@ -116,62 +105,107 @@ function getDSH($inputFileName)
                     $plusDshSum = $orders[$orderData[0]]['Участие в программе лояльности'] + (float)$orderData[10];
                     $orders[$orderData[0]]['Участие в программе лояльности'] = $plusDshSum;
                 }
-
-                if (!isset($orders[$orderData[0]]['dshSum'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Участие в программе лояльности']];
-                } else {
-                    $orders[$orderData[0]]['dshSum'] += $orders[$orderData[0]]['Участие в программе лояльности'];
-                }
-
-
             }
+        }
 
+        $sheet = $spreadsheet->getSheetByName('Доставка покупателю');
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:Y' . $maxCell);
 
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+                if (!isset($orders[$orderData[0]])) {
+                    $orders[$orderData[0]] = ['Доставка покупателю' => (float)$orderData[17]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Доставка покупателю'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Доставка покупателю' => (float)$orderData[17]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Доставка покупателю'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Доставка покупателю'] + (float)$orderData[17];
+                    $orders[$orderData[0]]['Доставка покупателю'] = $plusDshSum;
+                }
+            }
+        }
+
+        $sheet = $spreadsheet->getSheetByName('Экспресс-доставка покупателю');
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:M' . $maxCell);
+
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+                if (!isset($orders[$orderData[0]])) {
+                    $orders[$orderData[0]] = ['Экспресс-доставка покупателю' => (float)$orderData[5]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Экспресс-доставка покупателю'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Экспресс-доставка покупателю' => (float)$orderData[5]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Экспресс-доставка покупателю'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Экспресс-доставка покупателю'] + (float)$orderData[5];
+                    $orders[$orderData[0]]['Экспресс-доставка покупателю'] = $plusDshSum;
+                }
+            }
         }
 
 
-        $sheet = $spreadsheet->getSheetByName('Доставка покупателям');
-        $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:R' . $maxCell);
+        $sheet = $spreadsheet->getSheetByName('Приём и перевод платежа');
+        $maxCell = $sheet->getHighestDataRow("H");
+        $data = $sheet->rangeToArray('H3:L' . $maxCell);
 
         if (isset($data) && sizeof($data) > 0) {
             foreach ($data as $orderData) {
 
                 if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Доставка покупателям' => (float)$orderData[17]];
-                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Доставка покупателям'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Доставка покупателям' => (float)$orderData[17]];
-                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Доставка покупателям'])) {
-                    $plusDshSum = $orders[$orderData[0]]['Доставка покупателям'] + (float)$orderData[17];
-                    $orders[$orderData[0]]['Доставка покупателям'] = $plusDshSum;
+                    $orders[$orderData[0]] = ['Приём и перевод платежа' => (float)$orderData[4]];
+                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Приём и перевод платежа'])) {
+                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Приём и перевод платежа' => (float)$orderData[4]];
+                } elseif (isset($orders[$orderData[0]]) && isset($orders[$orderData[0]]['Приём и перевод платежа'])) {
+                    $plusDshSum = $orders[$orderData[0]]['Приём и перевод платежа'] + (float)$orderData[4];
+                    $orders[$orderData[0]]['Приём и перевод платежа'] = $plusDshSum;
                 }
-
-                if (!isset($orders[$orderData[0]]['dshSum'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['dshSum' => $orders[$orderData[0]]['Доставка покупателям']];
-                } else {
-                    $orders[$orderData[0]]['dshSum'] += $orders[$orderData[0]]['Доставка покупателям'];
-                }
-
 
             }
-
-
         }
 
-        $sheet = $spreadsheet->getSheetByName('Экспресс заказы');
-        $maxCell = $sheet->getHighestDataRow("A");
-        $data = $sheet->rangeToArray('A2:F' . $maxCell);
 
+        $sheet = $spreadsheet->getSheetByName('Обработка заказа в СЦ');
+        $maxCell = $sheet->getHighestDataRow("O");
+        $data = $sheet->rangeToArray('O3:P' . $maxCell);
+
+        $obrabotkaZakazaSC=0;
         if (isset($data) && sizeof($data) > 0) {
             foreach ($data as $orderData) {
-                if (!isset($orders[$orderData[0]])) {
-                    $orders[$orderData[0]] = ['Экспресс заказы' => (float)$orderData[5]];
-                } elseif (isset($orders[$orderData[0]]) && !isset($orders[$orderData[0]]['Экспресс заказы'])) {
-                    $orders[$orderData[0]] = $orders[$orderData[0]] + ['Экспресс заказы' => (float)$orderData[5]];
-                }
+                $obrabotkaZakazaSC += (float)$orderData[0];
             }
+            $orders['Обработка заказа в СЦ'] = $obrabotkaZakazaSC;
+            $orders['Обработка заказа в СЦ значение'] = $obrabotkaZakazaSC/$orders["ordersQty"];
+        }
+
+
+        $sheet = $spreadsheet->getSheetByName('Хранение невыкупов и возвратов');
+        $maxCell = $sheet->getHighestDataRow("L");
+        $data = $sheet->rangeToArray('L3:M' . $maxCell);
+
+        $hranenieNevykupllZakaza=0;
+        if (isset($data) && sizeof($data) > 0) {
+            foreach ($data as $orderData) {
+                $hranenieNevykupllZakaza += (float)$orderData[0];
+            }
+            $orders['Хранение невыкупов и возвратов'] = $hranenieNevykupllZakaza;
+            $orders['Хранение невыкупов и возвратов значение'] = $hranenieNevykupllZakaza/$orders["ordersQty"];
+        }
+
+
+        foreach ($orders as $key=>$order){
+
+            if(!is_array($order)) continue;
+            $order['dshSum'] = $order["Размещение товаров на витрине"] ?? 0;
+            $order['dshSum'] += $order["Складская обработка"] ?? 0;
+            $order['dshSum'] += $order["Участие в программе лояльности"] ?? 0;
+            $order['dshSum'] += $order["Доставка покупателю"] ?? 0;
+            $order['dshSum'] += $order["Приём и перевод платежа"] ?? 0;
+            $order['dshSum'] += $order["Обработка заказа в СЦ значение"] ?? 0;
+            $order['dshSum'] += $order["Хранение невыкупов и возвратов значение"] ?? 0;
+
+            $orders[$key] = $order;
         }
         return $orders;
+
 
     } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {
         die('Error getActiveSheet: ' . $e->getMessage());
@@ -191,26 +225,23 @@ function setDSH($orders)
 
         $orderMS->name = $orderName;
         $orderMS->id = null;
-//        $orderDetails = $orderMS->getByName();
         $orderDetails = $orderMS->getByExternalCode();
         $orderMS->id = $orderDetails['id'];
         if(!isset($orderDetails['description'])){
             $orderDetails['description'] = '';
         }
 
-//        $razmeshComment = isset($orderDSHs['Размещение товаров на Беру']) ? "Размещение товаров на Беру: " . $orderDSHs['Размещение товаров на Беру'] : '';
-//        $agentComment = isset($orderDSHs['Агентское вознаграждение']) ? "Агентское вознаграждение: " . $orderDSHs['Агентское вознаграждение'] : '';
-
-//        $DSHSumComment = "\n$razmeshComment $agentComment";
-
-        if(!isset($orderDSHs['Экспресс заказы']) || $orderDSHs['Экспресс заказы']<=0){
-            $orderDSHs['Экспресс заказы'] = 0;
+        if(!isset($orderDSHs['Экспресс-доставка покупателю']) || $orderDSHs['Экспресс-доставка покупателю']<=0){
+            $orderDSHs['Экспресс-доставка покупателю'] = 0;
         }
         if(!isset($orderDSHs['dshSum']) || $orderDSHs['dshSum']<=0){
             $orderDSHs['dshSum'] = 0;
         }
-        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], '',$orderDSHs['Экспресс заказы']);
+
         var_dump($orderName);
+
+        //var_dump($orderDetails['description'], $orderDSHs['dshSum'], '',$orderDSHs['Экспресс-доставка покупателю']);
+        $result = $orderMS->setDSHSum($orderDetails['description'], $orderDSHs['dshSum'], '',$orderDSHs['Экспресс-доставка покупателю']);
 
         if (strpos($result, 'обработка-ошибок') > 0 || $result == '' || $result == false) {
             var_dump($orderMS, $result, "ERROR!!!1");
