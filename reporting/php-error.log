@@ -3504,3 +3504,268 @@ Stack trace:
 [03-Mar-2022 14:13:02 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 235
 [03-Mar-2022 14:13:02 UTC] PHP Warning:  Cannot use a scalar value as an array in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 238
 [03-Mar-2022 14:13:02 UTC] PHP Warning:  Illegal string offset 'description' in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 244
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:11:39 UTC] PHP Notice:  Undefined index: Приём и перевод платежа in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 207
+[06-Apr-2022 12:14:56 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:15:53 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:18:18 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 146
+[06-Apr-2022 12:21:55 UTC] PHP Notice:  Undefined index: Доставка покупателю in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 144
+[07-Apr-2022 14:09:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function str_contains() in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php:279
+Stack trace:
+#0 C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php(29): setDSH(Array)
+#1 {main}
+  thrown in C:\Users\User\Documents\beru-git\beru-git\reporting\parseExcel.php on line 279
